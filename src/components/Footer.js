@@ -108,7 +108,7 @@ function Footer() {
               <Link to="/">Jayesh Soni</Link>
             </div>
             <div className="footer-link-items">
-              <h2>Social Media</h2>
+              <h2>Social</h2>
               <a href="https://www.linkedin.com/in/code-jet-aa3644223">Linkedin</a>
               <a href="https://twitter.com/HqIndyq">Twitter</a>
             </div>
@@ -121,14 +121,16 @@ function Footer() {
                 CODEJET
               </Link>
             </div>
-            <small className="website-rights">All right reserved || CODEJET © 2021</small>
+            <small className="website-rights">All right reserved | CODEJET © 2021</small>
             <div className="social-icons">
               <a className="social-icon-link Linkedin" href="https://www.linkedin.com/in/code-jet-aa3644223" aria-label="Linkedin">
-                <i className="fab fa-linkedin" />
+                <i className="fab fa-linkedin"></i>
               </a>
-
               <a className="social-icon-link twitter" href="https://twitter.com/HqIndyq" aria-label="Twitter">
-                <i className="fab fa-twitter" />
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a className="social-icon-link Linkedin" href="https://www.linkedin.com/in/code-jet-aa3644223" aria-label="Linkedin">
+                <i class="fab fa-facebook"></i>
               </a>
             </div>
           </div>

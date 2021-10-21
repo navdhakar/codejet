@@ -7,8 +7,10 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
         <div className="container">
-          <img src={Logo} alt="logo" style={{ height: "45px" }} className="navnik2" />
-          <button className="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
+          <Link className="nav-link" to="/">
+            <img src={Logo} alt="logo" style={{ height: "50px" }} className="navnik2" />
+          </Link>
+          <button className="navbar-toggler" data-target="#my-nav" onClick="myFunction(this)" data-toggle="collapse">
             <span className="bar1" /> <span className="bar2" /> <span className="bar3" />
           </button>
           <div id="my-nav" className="collapse navbar-collapse navnik3">
