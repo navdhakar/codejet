@@ -100,7 +100,9 @@
   color: #fff;
   font-size: 24px;
 }
-
+.social-icon-link:hover {
+  color: #242424;
+}
 .social-media {
   max-width: 1000px;
   width: 100%;

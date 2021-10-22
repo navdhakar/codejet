@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import banner1 from "../banner1.jpg";
 function Opportunity() {
   return (
     <div>
@@ -68,7 +69,7 @@ function Opportunity() {
             <div id="MostPopular" className="category-container">
               <div className="category-heading">
                 Projects
-                <span className="course-count">(10)</span>
+                <span className="course-count">(3)</span>
               </div>
               <div className="custom-carousel" data-category="Most_Popular">
                 <div className="slider">
@@ -97,10 +98,9 @@ function Opportunity() {
                                   }}
                                 >
                                   <span className="hover hover-1 line-span">
-                                    <div id="know-more-box">
-                                      Know more
-                                      <i className="is-icon-chevron-right-bold-s" aria-hidden="true" style={{}} />
-                                    </div>
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
                                   </span>
                                 </div>
                               </div>
@@ -113,9 +113,9 @@ function Opportunity() {
                   <div className="slider-item ">
                     <a href="/digital-marketing-training/?tracking_source=trainings-cards">
                       <div className="course-card">
-                        <div className="tag-slant tag-slant-top-left">
+                        {/* <div className="tag-slant tag-slant-top-left">
                           <span>75% OFF</span>
-                        </div>
+                        </div> */}
                         <div className="course-image">
                           <img className="img-responsive" src="/cached_uploads/home/images/digital-marketing.jpg" alt="Digital Marketing" />
                         </div>
@@ -138,10 +138,9 @@ function Opportunity() {
                                   }}
                                 >
                                   <span className="hover hover-1 line-span">
-                                    <div id="know-more-box">
-                                      Know more
-                                      <i className="is-icon-chevron-right-bold-s" aria-hidden="true" style={{}} />
-                                    </div>
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
                                   </span>
                                 </div>
                               </div>
@@ -181,10 +180,46 @@ function Opportunity() {
                                   }}
                                 >
                                   <span className="hover hover-1 line-span">
-                                    <div id="know-more-box">
-                                      Know more
-                                      <i className="is-icon-chevron-right-bold-s" aria-hidden="true" style={{}} />
-                                    </div>
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="slider-item ">
+                    <a href="/web-development-training/?tracking_source=trainings-cards">
+                      <div className="course-card">
+                        <div className="course-image">
+                          <img className="img-responsive" src="/cached_uploads/home/images/web-development.jpg" alt="Web Development" />
+                        </div>
+                        <div className="course-block">
+                          <h4 className="course-title">Web Development</h4>
+                          <p className="course-caption">Learn how to create a website from scratch</p>
+                          <div className="course-block-footer-treatment">
+                            <div className="duration-view">
+                              Duration:
+                              <span style={{ fontWeight: 500 }}>8 weeks</span>
+                            </div>
+                            <div className="know-more-button">
+                              <div className="underline-animate">
+                                <div
+                                  className="line-container"
+                                  style={{
+                                    paddingTop: "8px",
+                                    paddingLeft: "8px",
+                                    paddingBottom: "6px",
+                                  }}
+                                >
+                                  <span className="hover hover-1 line-span">
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
                                   </span>
                                 </div>
                               </div>

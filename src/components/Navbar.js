@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../logo.png";
+
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
           <Link className="nav-link" to="/">
             <img src={Logo} alt="logo" style={{ height: "50px" }} className="navnik2" />
           </Link>
-          <button className="navbar-toggler" data-target="#my-nav" onClick="myFunction(this)" data-toggle="collapse">
+          <button className="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
             <span className="bar1" /> <span className="bar2" /> <span className="bar3" />
           </button>
           <div id="my-nav" className="collapse navbar-collapse navnik3">
