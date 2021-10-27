@@ -72,7 +72,7 @@ export default function Home() {
                   </small>
                 </p>
                 <Link to="/about">
-                  Learn More
+                  Explore
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link>
               </div>
