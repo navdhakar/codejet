@@ -12,7 +12,7 @@ export default function Why() {
             we are part of revolution where we are working toward diminishing the gap between student learning and earning. student developers who work hard
             deserves better incentives.
           </p>
-          <p>By hiring us not only you will have best IT services at your disposal but you will become part of great cause and revolution.</p>
+          <p>By hiring us you will not only have best IT services at your disposal but you will become part of great cause and revolution.</p>
         </div>
       </div>
       <div className="row" style={{ paddingBottom: "30px" }}>
@@ -21,12 +21,12 @@ export default function Why() {
           <p style={{ paddingBottom: "20px" }}>● We provide very affordable prices in compare to other IT services providers</p>
           <p style={{ paddingBottom: "20px" }}>
             ● We want to save students and IT service requirer like you from those middleman who charge absurd prices to you for their services and pay very
-            less to students they hire in name of internship
+            less to students they hire in name of internship.
           </p>
 
           <p style={{ paddingBottom: "20px" }}>
-            ● as our developers are students who are always learning new tech. provided by our developers will be highly oriented with ever evolving new
-            technology so will your product
+            ● as our developers are students who are always learning new tech. services provided by our developers will be highly oriented with ever evolving
+            new technology and so will be your product.
           </p>
 
           <p style={{ paddingBottom: "20px" }}>● you will be hiring new and fresh mindset of developer which is open to new opportunities and hard tasks.</p>
@@ -37,7 +37,7 @@ export default function Why() {
             ● We are not like other service based company , our team of developer is focussed solely on your project providing best service and support for you.
           </p>
           <p style={{ paddingBottom: "20px" }}>So what are you waiting for 🤗!!</p>
-          <div className="container-fluid gtco-banner-area">
+          <div className="container-fluid gtco-banner-area" style={{ marginBottom: "-500px" }}>
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
