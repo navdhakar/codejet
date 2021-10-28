@@ -6,11 +6,13 @@ export default function Why() {
     <div style={{ margin: "100px" }}>
       <div className="row" style={{ paddingBottom: "30px" }}>
         <div className="col-md-5">
-          <h1>Intro 👋</h1>
-          <p>
+          <h1 style={{ paddingBottom: "30px" }}>In short 👋</h1>
+          <p style={{ paddingBottom: "30px" }}>Say no to expensive coorporate hiring😎</p>
+          <p style={{ paddingBottom: "30px" }}>
             we are part of revolution where we are working toward diminishing the gap between student learning and earning. student developers who work hard
             deserves better incentives.
           </p>
+          <p>By hiring us not only you will have best IT services at your disposal but you will become part of great cause and revolution.</p>
         </div>
       </div>
       <div className="row" style={{ paddingBottom: "30px" }}>

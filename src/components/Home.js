@@ -10,7 +10,9 @@ export default function Home() {
           <div className="row">
             <div className="col-md-6">
               <h1> Bridging Students learning and earning</h1>
-              <p className="text-left">We provide revolutionary IT services for businesses from best students minds across country</p>
+              <p className="text-left">
+                We provide revolutionary IT services for startups and businesses from best students minds across country at very affordable prices.
+              </p>
               <div className="navnik">
                 {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
                   Find Work

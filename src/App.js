@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import About from "./components/About";
 import Why from "./components/Why";
+import Hired from "./components/Hired";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/login" exact component={Login} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/about" exact component={About} />
+        <Route path="/hired" exact component={Hired} />
       </Switch>
       <Footer />
     </Router>

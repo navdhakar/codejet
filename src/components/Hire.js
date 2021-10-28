@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const server = process.env.NODE_ENV == "production" ? "production address" : "http://127.0.0.1:8002";
 function Hire() {
@@ -13,7 +14,7 @@ function Hire() {
   const timeRef = useRef();
 
   function hire(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const hire_data = {
       company_name: companynameRef.current.value,
       contact_no: contactRef.current.value,
@@ -76,10 +77,10 @@ function Hire() {
                 <option value="vw">Web design(UI/UX)</option>
               </select>
               <textarea className="form-control" ref={descriptionRef} placeholder="Tell us About your Project" defaultValue={""} />
-              <a href="/" className="submit-button" onClick={hire}>
+              <Link to="/hired" className="submit-button" onClick={hire}>
                 HIRE
                 <i className="fa fa-angle-right" aria-hidden="true" />
-              </a>
+              </Link>
             </div>
             <div className="col-md-6">
               <div className="card">
