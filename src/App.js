@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import About from "./components/About";
+import Why from "./components/Why";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/services" exact component={Services} />
         <Route path="/opportunity" exact component={Opportunity} />
+        <Route path="/why" exact component={Why} />
         <Route path="/hireus" exact component={Hire} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/login" exact component={Login} />

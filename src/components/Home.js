@@ -12,8 +12,12 @@ export default function Home() {
               <h1> Bridging Students learning and earning</h1>
               <p className="text-left">We provide revolutionary IT services for businesses from best students minds across country</p>
               <div className="navnik">
-                <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
+                {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
                   Find Work
+                  <i className="fa fa-angle-right" aria-hidden="true" />
+                </Link> */}
+                <Link to="/why" className="mohirti" style={{ marginRight: "30px" }}>
+                  Why us
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link>
                 <Link to="/hireus">
@@ -129,7 +133,7 @@ export default function Home() {
               <div className="col-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">5</h5>
+                    <h5 className="card-title">5+</h5>
                     <p className="card-text">Happy Clients</p>
                   </div>
                 </div>
