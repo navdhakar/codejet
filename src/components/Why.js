@@ -8,6 +8,10 @@ export default function Why() {
         <div className="col-md-5">
           <h1 style={{ paddingBottom: "30px" }}>In short 👋</h1>
           <p style={{ paddingBottom: "30px" }}>Say no to expensive coorporate hiring😎</p>
+          <p style={{ paddingBottom: "20px" }}>
+            {" "}
+            <strong>💡 did you know most of IT service based companies hires students as intern for work at very less pay.</strong>
+          </p>
           <p style={{ paddingBottom: "30px" }}>
             we are part of revolution where we are working toward diminishing the gap between student learning and earning. student developers who work hard
             deserves better incentives.
@@ -23,7 +27,10 @@ export default function Why() {
             ● We want to save students and IT service requirer like you from those middleman who charge absurd prices to you for their services and pay very
             less to students they hire in name of internship.
           </p>
-
+          <p style={{ paddingBottom: "20px" }}>
+            ● We connect developers directly to recruiter by eliminating third party middleman and cutting cost of operations hence saving your money.
+          </p>
+          <p style={{ paddingBottom: "20px" }}>● We hire highly skilled student developer who work under guidance of industry experts.</p>
           <p style={{ paddingBottom: "20px" }}>
             ● as our developers are students who are always learning new tech. services provided by our developers will be highly oriented with ever evolving
             new technology and so will be your product.
