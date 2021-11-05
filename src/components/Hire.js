@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import Select from "react-select";
 
-const server = process.env.NODE_ENV == "production" ? "production address" : "http://127.0.0.1:8002";
+const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com/" : "http://127.0.0.1:8002";
 function Hire() {
   const companynameRef = useRef();
   const contactRef = useRef();
@@ -12,6 +13,7 @@ function Hire() {
   const experienceRef = useRef();
   const descriptionRef = useRef();
   const timeRef = useRef();
+  const serviceRef = useRef();
 
   function hire(e) {
     // e.preventDefault();
@@ -21,12 +23,13 @@ function Hire() {
       email: emailRef.current.value,
       project_title: titleRef.current.value,
       technology_required: technologyRef.current.value,
+      service_required: serviceRef.current.value,
       budget: budgetRef.current.value,
       time_limit: timeRef.current.value,
       required_experience: experienceRef.current.value,
       project_description: descriptionRef.current.value,
     };
-
+    // console.log(serviceRef.current.value);
     fetch(`${server}/hire_api/hire/hire_us`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors",
@@ -46,11 +49,20 @@ function Hire() {
     })
       .then((res) => {
         //window.location.reload();
-        console.log(hire_data);
+        //console.log(hire_data);
         return res.json();
       })
-      .then((data) => console.log(data));
+      .then((data) => console.log(data))
+      .catch((err) => {
+        console.log("oops something went wrong");
+      });
   }
+  // const options = [
+  //   { value: "Web Development", label: "Web Development" },
+  //   { value: "App Development", label: "App Development" },
+  //   { value: "SEO", label: "SEO" },
+  //   { value: "UI/UX", label: "UI/UX" },
+  // ];
 
   return (
     <div>
@@ -68,13 +80,13 @@ function Hire() {
               <input type="text" ref={budgetRef} className="form-control" placeholder="Budget" />
               <input type="text" ref={timeRef} className="form-control" placeholder="Time" />
               <input type="text" ref={experienceRef} className="form-control" placeholder="Experience Required" />
-              <select className="form-control">
+              <select ref={serviceRef} className="form-control">
                 <option value=" Web Development" selected>
                   Web Development
                 </option>
-                <option value="volvo">App Development</option>
-                <option value="saab">Seo</option>
-                <option value="vw">Web design(UI/UX)</option>
+                <option value="App Development">App Development</option>
+                <option value="SEO">SEO</option>
+                <option value="UI">UI/UX</option>
               </select>
               <textarea className="form-control" ref={descriptionRef} placeholder="Tell us About your Project" defaultValue={""} />
               <Link to="/hired" className="submit-button" onClick={hire}>
