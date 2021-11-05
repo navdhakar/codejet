@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 
-const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com/" : "https://codejet.herokuapp.com/";
+const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com/" : "http://127.0.0.1:8002";
 function Hire() {
   const companynameRef = useRef();
   const contactRef = useRef();
