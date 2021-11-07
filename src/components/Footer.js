@@ -102,7 +102,7 @@ function Footer() {
           <div className="footer-link-wrapper">
             <div className="footer-link-items">
               <h2>Our Team</h2>
-              <Link to="https://twitter.com/dev_navdeep">Navdeep Dhakar</Link>
+              <a to="https://twitter.com/dev_navdeep">Navdeep Dhakar</a>
               <Link to="/">Mohit Jain</Link>
               <Link to="/">Manish Suthar</Link>
               <Link to="/">Jayesh Soni</Link>
