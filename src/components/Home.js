@@ -11,10 +11,11 @@ export default function Home() {
             <div className="col-md-6">
               <h1> Bridging Students learning and earning</h1>
               <p className="text-left">
-                We provide revolutionary IT services for startups and businesses from best students minds across country at very affordable prices.
+                We provide revolutionary <strong>IT services</strong> and <strong>TECH team</strong> for new and early stage startups and businesses from best
+                students minds across country at very affordable prices.
               </p>
               <div className="navnik">
-                {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
+                {/* <Link to="/" className="mohirti" style={{ marginRight: "30px" }}>
                   Find Work
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link> */}
@@ -68,7 +69,7 @@ export default function Home() {
               <div className="col-md-5">
                 <h2> Delivering digital Solutions at affordable prices </h2>
                 <p>
-                  We are here to help you to take your business into next step, where you focus on the business and we take care of all the technical
+                  We are here to help you to take your startup into next step, where you focus on the business and we take care of all the technical
                   requirements.
                 </p>
                 <p>
@@ -77,7 +78,7 @@ export default function Home() {
                     your IT needs.
                   </small>
                 </p>
-                <Link to="/about">
+                <Link to="/why">
                   Explore
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link>

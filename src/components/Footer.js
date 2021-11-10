@@ -102,7 +102,7 @@ function Footer() {
           <div className="footer-link-wrapper">
             <div className="footer-link-items">
               <h2>Our Team</h2>
-              <a to="https://twitter.com/dev_navdeep">Navdeep Dhakar</a>
+              <Link to="https://twitter.com/dev_navdeep">Navdeep Dhakar</Link>
               <Link to="/">Mohit Jain</Link>
               <Link to="/">Manish Suthar</Link>
               <Link to="/">Jayesh Soni</Link>
@@ -126,7 +126,7 @@ function Footer() {
               <a className="social-icon-link Linkedin" href="https://www.linkedin.com/in/code-jet-aa3644223" aria-label="Linkedin">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a className="social-icon-link twitter" href="https://twitter.com/HqIndyq" aria-label="Twitter">
+              <a className="social-icon-link twitter" href="https://twitter.com/CodejetHq" aria-label="Twitter">
                 <i className="fab fa-twitter"></i>
               </a>
               <a className="social-icon-link Linkedin" href="https://www.linkedin.com/in/code-jet-aa3644223" aria-label="Linkedin">

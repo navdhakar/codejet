@@ -7,42 +7,21 @@ function Services() {
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
-              <h2>
-                {" "}
-                Explore The Services
-                <br />
-                We Offer For You{" "}
-              </h2>
+              <h2> Services our talented student community offer to you </h2>
               <p>
-                we provide rich set of services like web app development, mobile
-                app development, UI/UX design and many more to make your
-                business grow fast and making it current technology ready.{" "}
+                we provide rich set of services like web app development, mobile app development, UI/UX design and many more to make your business grow fast and
+                making it current technology ready.{" "}
               </p>
               <a href="/">
-                All Services{" "}
-                <i className="fa fa-angle-right" aria-hidden="true" />
+                All Services <i className="fa fa-angle-right" aria-hidden="true" />
               </a>
             </div>
             <div className="col-lg-8">
               <svg id="bg-services" width="100%" viewBox="0 0 1000 800">
                 <defs>
-                  <linearGradient
-                    id="PSgrad_02"
-                    x1="64.279%"
-                    x2="0%"
-                    y1="76.604%"
-                    y2="0%"
-                  >
-                    <stop
-                      offset="0%"
-                      stopColor="rgb(1,230,248)"
-                      stopOpacity={1}
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="rgb(29,62,222)"
-                      stopOpacity={1}
-                    />
+                  <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                    <stop offset="0%" stopColor="rgb(1,230,248)" stopOpacity={1} />
+                    <stop offset="100%" stopColor="rgb(29,62,222)" stopOpacity={1} />
                   </linearGradient>
                 </defs>
                 <path
@@ -56,11 +35,7 @@ function Services() {
                 <div className="col">
                   <div className="card text-center">
                     <div className="oval">
-                      <img
-                        className="card-img-top"
-                        src="images/web-design.png"
-                        alt=""
-                      />
+                      <img className="card-img-top" src="images/web-design.png" alt="" />
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">Web Design</h3>
@@ -72,50 +47,31 @@ function Services() {
                   </div>
                   <div className="card text-center">
                     <div className="oval">
-                      <img
-                        className="card-img-top"
-                        src="images/marketing.png"
-                        alt=""
-                      />
+                      <img className="card-img-top" src="images/marketing.png" alt="" />
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">SEO</h3>
-                      <p className="card-text">
-                        Services for growing your website traffic from organic
-                        search results
-                      </p>
+                      <p className="card-text">Services for growing your website traffic from organic search results</p>
                     </div>
                   </div>
                 </div>
                 <div className="col">
                   <div className="card text-center">
                     <div className="oval">
-                      <img
-                        className="card-img-top"
-                        src="images/seo.png"
-                        alt=""
-                      />
+                      <img className="card-img-top" src="images/seo.png" alt="" />
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">App develpoment</h3>
-                      <p className="card-text">
-                        We offer top-notch mobile app development services
-                      </p>
+                      <p className="card-text">We offer top-notch mobile app development services</p>
                     </div>
                   </div>
                   <div className="card text-center">
                     <div className="oval">
-                      <img
-                        className="card-img-top"
-                        src="images/graphics-design.png"
-                        alt=""
-                      />
+                      <img className="card-img-top" src="images/graphics-design.png" alt="" />
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">UI/UX Design</h3>
-                      <p className="card-text">
-                        Highly interactive and modern UI/UX designs
-                      </p>
+                      <p className="card-text">Highly interactive and modern UI/UX designs</p>
                     </div>
                   </div>
                 </div>
