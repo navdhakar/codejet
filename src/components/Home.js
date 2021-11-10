@@ -9,10 +9,13 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h1> Bridging Students learning and earning</h1>
+              {/* Bridging Students learning and earning */}
+              <h1>Bridging Students learning and earning</h1>
               <p className="text-left">
                 We provide revolutionary <strong>IT services</strong> and <strong>TECH team</strong> for new and early stage startups and businesses from best
                 students minds across country at very affordable prices.
+                <br></br>
+                <strong>you got the right idea we got the right team.</strong>
               </p>
               <div className="navnik">
                 {/* <Link to="/" className="mohirti" style={{ marginRight: "30px" }}>
