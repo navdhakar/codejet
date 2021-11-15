@@ -63,12 +63,180 @@ function Opportunity() {
             </div>
           </div>
           <p className="heading" id="know-more">
-            We offer
+            Projects
           </p>
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
               <div className="category-heading">
-                Projects
+                Entry level
+                <span className="course-count">(3)</span>
+              </div>
+              <div className="custom-carousel" data-category="Most_Popular">
+                <div className="slider">
+                  <div className="slider-item ">
+                    <a href="/web-development-training/?tracking_source=trainings-cards">
+                      <div className="course-card">
+                        <div className="course-image">
+                          <img className="img-responsive" src="/cached_uploads/home/images/web-development.jpg" alt="Web Development" />
+                        </div>
+                        <div className="course-block">
+                          <h4 className="course-title">Web Development</h4>
+                          <p className="course-caption">Learn how to create a website from scratch</p>
+                          <div className="course-block-footer-treatment">
+                            <div className="duration-view">
+                              Duration:
+                              <span style={{ fontWeight: 500 }}>8 weeks</span>
+                            </div>
+                            <div className="know-more-button">
+                              <div className="underline-animate">
+                                <div
+                                  className="line-container"
+                                  style={{
+                                    paddingTop: "8px",
+                                    paddingLeft: "8px",
+                                    paddingBottom: "6px",
+                                  }}
+                                >
+                                  <span className="hover hover-1 line-span">
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="slider-item ">
+                    <a href="/digital-marketing-training/?tracking_source=trainings-cards">
+                      <div className="course-card">
+                        {/* <div className="tag-slant tag-slant-top-left">
+                          <span>75% OFF</span>
+                        </div> */}
+                        <div className="course-image">
+                          <img className="img-responsive" src="/cached_uploads/home/images/digital-marketing.jpg" alt="Digital Marketing" />
+                        </div>
+                        <div className="course-block">
+                          <h4 className="course-title">Digital Marketing</h4>
+                          <p className="course-caption">Learn SEO, Search Engine Marketing, Web Analytics and more</p>
+                          <div className="course-block-footer-treatment">
+                            <div className="duration-view">
+                              Duration:
+                              <span style={{ fontWeight: 500 }}>8 weeks</span>
+                            </div>
+                            <div className="know-more-button">
+                              <div className="underline-animate">
+                                <div
+                                  className="line-container"
+                                  style={{
+                                    paddingTop: "8px",
+                                    paddingLeft: "8px",
+                                    paddingBottom: "6px",
+                                  }}
+                                >
+                                  <span className="hover hover-1 line-span">
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div className="slider-item ">
+                    <a href="/financial-modeling-valuation-training/?tracking_source=trainings-cards">
+                      <div className="course-card">
+                        <div className="course-image">
+                          <img
+                            className="img-responsive"
+                            src="/cached_uploads/home/images/financial-modeling-valuation.jpg"
+                            alt="Financial Modeling and Valuation"
+                          />
+                        </div>
+                        <div className="course-block">
+                          <h4 className="course-title">Financial Modeling and Valuation</h4>
+                          <p className="course-caption">Learn financial modeling and valuation techniques from scratch</p>
+                          <div className="course-block-footer-treatment">
+                            <div className="duration-view">
+                              Duration:
+                              <span style={{ fontWeight: 500 }}>6 weeks</span>
+                            </div>
+                            <div className="know-more-button">
+                              <div className="underline-animate">
+                                <div
+                                  className="line-container"
+                                  style={{
+                                    paddingTop: "8px",
+                                    paddingLeft: "8px",
+                                    paddingBottom: "6px",
+                                  }}
+                                >
+                                  <span className="hover hover-1 line-span">
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="slider-item ">
+                    <a href="/web-development-training/?tracking_source=trainings-cards">
+                      <div className="course-card">
+                        <div className="course-image">
+                          <img className="img-responsive" src="/cached_uploads/home/images/web-development.jpg" alt="Web Development" />
+                        </div>
+                        <div className="course-block">
+                          <h4 className="course-title">Web Development</h4>
+                          <p className="course-caption">Learn how to create a website from scratch</p>
+                          <div className="course-block-footer-treatment">
+                            <div className="duration-view">
+                              Duration:
+                              <span style={{ fontWeight: 500 }}>8 weeks</span>
+                            </div>
+                            <div className="know-more-button">
+                              <div className="underline-animate">
+                                <div
+                                  className="line-container"
+                                  style={{
+                                    paddingTop: "8px",
+                                    paddingLeft: "8px",
+                                    paddingBottom: "6px",
+                                  }}
+                                >
+                                  <span className="hover hover-1 line-span">
+                                    <Link to="#" className="btn btn-outline-light my-2 my-sm-0 mr-3 text-uppercase" style={{ color: "blue" }}>
+                                      Apply
+                                    </Link>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="courses-container" className="max-width-container">
+            <div id="MostPopular" className="category-container">
+              <div className="category-heading">
+                Intermediate level
                 <span className="course-count">(3)</span>
               </div>
               <div className="custom-carousel" data-category="Most_Popular">

@@ -18,10 +18,10 @@ export default function Home() {
                 <strong>you got the right idea we got the right team.</strong>
               </p>
               <div className="navnik">
-                {/* <Link to="/" className="mohirti" style={{ marginRight: "30px" }}>
-                  Find Work
+                <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
+                  Opportunity
                   <i className="fa fa-angle-right" aria-hidden="true" />
-                </Link> */}
+                </Link>
                 <Link to="/why" className="mohirti" style={{ marginRight: "30px" }}>
                   Why us
                   <i className="fa fa-angle-right" aria-hidden="true" />

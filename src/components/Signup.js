@@ -9,10 +9,14 @@ function Signup() {
           <div className="row">
             <div className="col" id="contact">
               <h4>Student Register </h4>
-              <input type="email" className="form-control" placeholder="Username" />
+              <input type="text" className="form-control" placeholder="Username" />
               <input type="email" className="form-control" placeholder="Email Address" />
+              <input type="text" className="form-control" placeholder="College name" />
+              <input type="text" className="form-control" placeholder="College branch/course" />
+
+              <input type="text" className="form-control" placeholder="College year" />
+              <input type="text" className="form-control" placeholder="Github profile" />
               <input type="password" className="form-control" placeholder="Password" />
-              <input type="password" className="form-control" placeholder="Confirm password" />
               <a href="/" className="submit-button">
                 Sign-Up <i className="fa fa-angle-right" aria-hidden="true" />
               </a>

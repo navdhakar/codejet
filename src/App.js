@@ -12,6 +12,7 @@ import Signup from "./components/Signup";
 import About from "./components/About";
 import Why from "./components/Why";
 import Hired from "./components/Hired";
+import Community from "./components/Community";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/signup" exact component={Signup} />
         <Route path="/about" exact component={About} />
         <Route path="/hired" exact component={Hired} />
+        <Route path="/community" exact component={Community} />
       </Switch>
       <Footer />
     </Router>
