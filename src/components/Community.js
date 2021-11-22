@@ -25,7 +25,7 @@ export default function Community() {
           <button className="primary ghost">Following</button>
         </div> */}
         <div className="skills">
-          <h6>Skills</h6>
+          <h6 style={{ color: "#fff" }}>Skills</h6>
           <div className="row">
             <div className="col">
               <ul>
@@ -70,7 +70,7 @@ export default function Community() {
           <button className="primary ghost">Following</button>
         </div> */}
         <div className="skills">
-          <h6>Skills</h6>
+          <h6 style={{ color: "#fff" }}>Skills</h6>
           <div className="row">
             <div className="col">
               <ul>
@@ -114,7 +114,7 @@ export default function Community() {
           <button className="primary ghost">Following</button>
         </div> */}
         <div className="skills">
-          <h6>Skills</h6>
+          <h6 style={{ color: "#fff" }}>Skills</h6>
           <div className="row">
             <div className="col">
               <ul>
