@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
-let history = useHistory();
 
 import "./profileEdit.css";
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
 export default function ProfileEdit() {
+  let history = useHistory();
+
   const [profile_data, profile_load] = useState({});
   const [image, setImage] = useState();
 
