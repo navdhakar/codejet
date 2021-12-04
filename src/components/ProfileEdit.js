@@ -128,7 +128,7 @@ export default function ProfileEdit() {
       .then((response) => response.json())
       .then((result) => {
         console.log("Success:", result);
-        history.push("/login");
+        history.push("/profile");
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -160,6 +160,7 @@ export default function ProfileEdit() {
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
+        history.push("/profile");
       })
       .catch((error) => {
         console.error("Error:", error);
