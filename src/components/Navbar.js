@@ -1,9 +1,68 @@
-import React from "react";
+import React, { react } from "react";
 import Logo from "../logo.png";
-
-import { Link } from "react-router-dom";
+import { Link, Redirect, useHistory } from "react-router-dom";
 
 function Navbar() {
+  let history = useHistory();
+
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return null;
+  }
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + ";path=/";
+  }
+  function logout(e) {
+    setCookie("auth_token", "noauth");
+    window.location.reload();
+    // <Redirect to="/login" />;
+    history.push("/login");
+    // e.preventDefault();
+  }
+  function Logout() {
+    return (
+      <Link className="btn btn-info my-2 my-sm-0 text-uppercase" onClick={logout}>
+        logout
+      </Link>
+    );
+  }
+  function Notlogin() {
+    return (
+      <>
+        <Link to="/login" className="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">
+          login
+        </Link>
+        <Link to="/signup" className="btn btn-info my-2 my-sm-0 text-uppercase">
+          sign up
+        </Link>
+      </>
+    );
+  }
+  const log = getCookie("auth_token");
+  function Login() {
+    const log = getCookie("auth_token");
+    if (log == "noauth" || null) {
+      console.log("log in");
+      return <Notlogin />;
+    }
+    console.log("no login");
+    return <Logout />;
+  }
+  console.log(log);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
@@ -42,12 +101,13 @@ function Navbar() {
             </ul>
 
             <form className="form-inline my-2 my-lg-0">
-              <Link to="/login" className="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">
+              {/* <Link to="/login" className="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">
                 login
               </Link>
               <Link to="/signup" className="btn btn-info my-2 my-sm-0 text-uppercase">
                 sign up
-              </Link>
+              </Link> */}
+              <Login />
             </form>
           </div>
         </div>

@@ -1,6 +1,105 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link, Redirect } from "react-router-dom";
 import "./Profile.css";
+const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
+
 export default function Profile() {
+  const [profile_data, profile_load] = useState({});
+  const [image, setImage] = useState();
+
+  /*const [state, setstate] = useState([])
+   const [page, setPage] = useState(PAGE_NUMBER)*/
+
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + ";path=/";
+  }
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return null;
+  }
+  const header_data = {
+    "Content-Type": "application/json",
+    // 'Content-Type': 'application/x-www-form-urlencoded',
+  };
+
+  if (getCookie("auth_token") != null || undefined) {
+    header_data.authorization = getCookie("auth_token");
+    console.log(header_data);
+  } else {
+    console.log(header_data);
+  }
+  const log = getCookie("auth_token");
+  if (log == "noauth" || null) {
+    console.log("no login");
+    window.location = "http://localhost:3000/login";
+  }
+  useEffect(() => {
+    fetch(`${server}/signup/register/current`, {
+      method: "GET", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors",
+      // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: header_data,
+      redirect: "follow", // manual, *follow, error
+      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      // body data type must match "Content-Type" header
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("data fetched");
+        // profile_data.name = data.name;
+        // profile_data.email = data.email;
+        // profile_data.college_name = data.college_name;
+        // profile_data.college_year = data.college_year;
+        // profile_data.college_branch = data.college_branch;
+        // profile_data.github_profile = data.github_profile;
+        // profile_load([]);
+        profile_load({
+          name: data.name,
+          email: data.email,
+          college_name: data.college_name,
+          college_year: data.college_year,
+          college_branch: data.college_branch,
+          github_profile: data.github_profile,
+          skills: data.skills,
+          rating: data.rating,
+        });
+        setImage();
+        if (data.profileImg) {
+          setImage(data.profileImg);
+        }
+        console.log(image);
+        console.log(data);
+        console.log(profile_data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  function Rating() {
+    return (
+      <div className="star-rating">
+        {[...Array(profile_data.rating)].map((star) => {
+          return <span className="star">⭐</span>;
+        })}
+      </div>
+    );
+  }
   return (
     <div>
       <div className="container">
@@ -19,9 +118,13 @@ export default function Profile() {
               <div className="card1">
                 <div className="card1-body">
                   <div className="d-flex flex-column align-items-center text-center">
-                    <img src="images/navdeep.jpg" alt="Admin" className="rounded-circle" width={150} />
+                    <img src={image} alt="Admin" className="rounded" width={150} />
                     <div className="mt-3">
-                      <h4>Navdeep Dhakar</h4>
+                      <h4>{profile_data.name}</h4>
+                      <div className="col">
+                        <h6>Rating</h6>
+                        <Rating />
+                      </div>
                       <p className="text-secondary mb-1">Full Stack Developer</p>
                       <p className="text-muted font-size-sm">Jaipur, Rajasthan, India </p>
                       <button className="btn btn-primary">Follow</button>
@@ -72,7 +175,7 @@ export default function Profile() {
                       </svg>
                       Github
                     </h6>
-                    <span className="text-secondary">https://github.com/navdhakar</span>
+                    <span className="text-secondary">{profile_data.github_profile}</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                     <h6 className="mb-0">
@@ -146,52 +249,61 @@ export default function Profile() {
                     <div className="col-sm-3">
                       <h6 className="mb-0">Full Name</h6>
                     </div>
-                    <div className="col-sm-9 text-secondary">Navdeep Dhakar</div>
+                    <div className="col-sm-9 text-secondary">{profile_data.name}</div>
                   </div>
                   <hr />
                   <div className="row">
                     <div className="col-sm-3">
                       <h6 className="mb-0">Email</h6>
                     </div>
-                    <div className="col-sm-9 text-secondary">navdepdhakar1@gmail.com</div>
+                    <div className="col-sm-9 text-secondary">{profile_data.email}</div>
                   </div>
                   <hr />
                   <div className="row">
                     <div className="col-sm-3">
                       <h6 className="mb-0">College/University</h6>
                     </div>
-                    <div className="col-sm-9 text-secondary">Swami keshwanand institute of technology</div>
+                    <div className="col-sm-9 text-secondary">{profile_data.college_name}</div>
                   </div>
                   <hr />
                   <div className="row">
                     <div className="col-sm-3">
                       <h6 className="mb-0">Branch/Course</h6>
                     </div>
-                    <div className="col-sm-9 text-secondary">Computer science and engineering</div>
+                    <div className="col-sm-9 text-secondary">{profile_data.college_branch}</div>
                   </div>
                   <hr />
                   <div className="row">
                     <div className="col-sm-3">
                       <h6 className="mb-0">Year</h6>
                     </div>
-                    <div className="col-sm-9 text-secondary">3rd</div>
+                    <div className="col-sm-9 text-secondary">{profile_data.college_year}</div>
+                  </div>
+                  <hr />
+                  <div className="row">
+                    <div className="col-sm-3">
+                      <h6 className="mb-0">Skills</h6>
+                    </div>
+                    <div className="col-sm-9 text-secondary">{profile_data.skills}</div>
                   </div>
                   <hr />
                   <div className="row">
                     <div className="col-sm-12">
-                      <a className="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">
-                        Edit
-                      </a>
+                      <Link to="/edit_profile" className="mohirti" style={{ marginRight: "30px", color: "white" }}>
+                        <a className="btn btn-info " target="__blank">
+                          Edit
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="row gutters-sm">
+              {/* <div className="row gutters-sm">
                 <div className="col-sm-6 mb-3">
                   <div className="card1 h-100">
                     <div className="card1-body">
                       <h6 className="d-flex align-items-center mb-3">
-                        <i className="material-icons text-info mr-2">assignment</i>Project Status
+                        <i className="material-icons text-info mr-2">Completed</i>Projects
                       </h6>
                       <small>React native app</small>
                       <div className="progress mb-3" style={{ height: "5px" }}>
@@ -255,7 +367,7 @@ export default function Profile() {
                   <div className="card1 h-100">
                     <div className="card1-body">
                       <h6 className="d-flex align-items-center mb-3">
-                        <i className="material-icons text-info mr-2">assignment</i>Project Status
+                        <i className="material-icons text-info mr-2">Active</i>Projects
                       </h6>
                       <small>Web Design</small>
                       <div className="progress mb-3" style={{ height: "5px" }}>
@@ -315,7 +427,7 @@ export default function Profile() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

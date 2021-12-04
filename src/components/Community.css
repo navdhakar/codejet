@@ -31,11 +31,12 @@ p {
   width: 96%;
   max-width: 100%;
   text-align: center;
+  /* margin-right: 30%; */
   margin-left: 2%;
 }
 
 .card-container .pro {
-  color: #231e39;
+  color: #2102ac;
   background-color: #febb0b;
   border-radius: 3px;
   font-size: 14px;
@@ -50,6 +51,8 @@ p {
   border: 1px solid #03bfcb;
   border-radius: 50%;
   padding: 7px;
+  max-width: 30%;
+  height: 180px;
 }
 
 button.primary {
@@ -64,11 +67,14 @@ button.primary {
 
 button.primary.ghost {
   background-color: transparent;
+  border: 1px solid beige;
+  padding: 8px;
   color: #02899c;
+  color: rgb(255, 255, 255);
 }
 
 .skills {
-  background-color: #1f1a36;
+  background-color: #1779f8f5;
   text-align: left;
   padding: 15px;
   margin-top: 30px;
@@ -82,14 +88,13 @@ button.primary.ghost {
 }
 
 .skills ul li {
-  border: 1px solid #2d2747;
+  /* border: 1px solid #2d2747; */
   border-radius: 2px;
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   margin: 0 7px 7px 0;
-  padding: 7px;
+  padding: 1px;
 }
-
 footer {
   background-color: #222;
   color: #fff;
@@ -224,4 +229,19 @@ footer a {
 
 .leaderboard {
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+}
+.textAlign {
+  text-align: left;
+  width: 30em;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 10em;
+}
+
+.navnit {
+  text-align: middle;
+  width: 90em;
+}
+#homepage-carousel {
+  background-color: #02899c;
 }

@@ -104,8 +104,6 @@ function Footer() {
               <h2>Our Team</h2>
               <Link to="https://twitter.com/dev_navdeep">Navdeep Dhakar</Link>
               <Link to="/">Mohit Jain</Link>
-              <Link to="/">Manish Suthar</Link>
-              <Link to="/">Jayesh Soni</Link>
             </div>
             <div className="footer-link-items">
               <h2>Social</h2>

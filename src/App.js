@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -14,6 +15,9 @@ import Why from "./components/Why";
 import Hired from "./components/Hired";
 import Community from "./components/Community";
 import Profile from "./components/Profile";
+import Emailver from "./components/Emailver";
+import ProfileEdit from "./components/ProfileEdit";
+const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
 function App() {
   return (
@@ -32,6 +36,8 @@ function App() {
         <Route path="/hired" exact component={Hired} />
         <Route path="/community" exact component={Community} />
         <Route path="/profile" exact component={Profile} />
+        <Route path="/email_verification" exact component={Emailver} />
+        <Route path="/edit_profile" exact component={ProfileEdit} />
       </Switch>
       <Footer />
     </Router>
