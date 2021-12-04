@@ -134,7 +134,7 @@ export default function ProfileEdit() {
       .catch((error) => {
         console.error("Error:", error);
       });
-    // e.preventDefault();
+    e.preventDefault();
   };
   const update_data = (e) => {
     const updated_data = {
@@ -167,6 +167,7 @@ export default function ProfileEdit() {
         console.error("Error:", error);
       });
     console.log(updated_data);
+    e.preventDefault();
   };
   return (
     <div>
