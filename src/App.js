@@ -17,9 +17,15 @@ import Community from "./components/Community";
 import Profile from "./components/Profile";
 import Emailver from "./components/Emailver";
 import ProfileEdit from "./components/ProfileEdit";
+import ReactGa from "react-ga";
+
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize("G-SCZWRQZ1HZ");
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <Router>
       <Navbar />
