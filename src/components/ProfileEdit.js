@@ -208,8 +208,8 @@ export default function ProfileEdit() {
 
                     <div className="mt-3">
                       <h4>{profile_data.name}</h4>
-                      <p className="text-secondary mb-1">Full Stack Developer</p>
-                      <p className="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                      <p className="text-secondary mb-1">{profile_data.skills}</p>
+                      {/* <p className="text-muted font-size-sm">Bay Area, San Francisco, CA</p> */}
                       <button className="btn btn-primary">Follow</button>
                       <button className="btn btn-outline-primary">Message</button>
                     </div>

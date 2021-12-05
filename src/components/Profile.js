@@ -125,10 +125,10 @@ export default function Profile() {
                         <h6>Rating</h6>
                         <Rating />
                       </div>
-                      <p className="text-secondary mb-1">Full Stack Developer</p>
-                      <p className="text-muted font-size-sm">Jaipur, Rajasthan, India </p>
-                      <button className="btn btn-primary">Follow</button>
-                      <button className="btn btn-outline-primary">Message</button>
+                      <p className="text-secondary mb-1">{profile_data.skills}</p>
+                      {/* <p className="text-muted font-size-sm">Jaipur, Rajasthan, India </p> */}
+                      {/* <button className="btn btn-primary">Follow</button>
+                      <button className="btn btn-outline-primary">Message</button> */}
                     </div>
                   </div>
                 </div>
