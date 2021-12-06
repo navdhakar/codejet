@@ -1,10 +1,10 @@
-import React, { react } from "react";
+import React, { react, useState } from "react";
 import Logo from "../logo.png";
 import { Link, Redirect, useHistory } from "react-router-dom";
 
 function Navbar() {
   let history = useHistory();
-
+  const [logged, setlog] = useState();
   function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -27,7 +27,7 @@ function Navbar() {
     document.cookie = cname + "=" + cvalue + ";" + ";path=/";
   }
   function logout(e) {
-    setCookie("auth_token", "noauth");
+    setCookie("auth_token", null);
     window.location.reload();
     // <Redirect to="/login" />;
     history.push("/login");
@@ -55,7 +55,7 @@ function Navbar() {
   const log = getCookie("auth_token");
   function Login() {
     const log = getCookie("auth_token");
-    if (log == "noauth" || null) {
+    if (!log) {
       console.log("log in");
       return <Notlogin />;
     }

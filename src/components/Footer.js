@@ -101,15 +101,17 @@ function Footer() {
           </div>
           <div className="footer-link-wrapper">
             <div className="footer-link-items">
-              <h2>Our Team</h2>
+              <h2>Co-Founder</h2>
               <Link to="https://twitter.com/dev_navdeep">Navdeep Dhakar</Link>
               <Link to="/">Mohit Jain</Link>
+              {/* <Link to="/">Manish Suthar</Link>
+              <Link to="/">Jayesh Soni</Link> */}
             </div>
-            <div className="footer-link-items">
+            {/* <div className="footer-link-items">
               <h2>Social</h2>
               <a href="https://www.linkedin.com/in/code-jet-aa3644223">Linkedin</a>
               <a href="https://twitter.com/HqIndyq">Twitter</a>
-            </div>
+            </div> */}
           </div>
         </div>
         <section className="social-media">
@@ -121,13 +123,20 @@ function Footer() {
             </div>
             <small className="website-rights">All right reserved | CODEJET © 2021</small>
             <div className="social-icons">
-              <a className="social-icon-link Linkedin" href="https://www.linkedin.com/in/code-jet-aa3644223" aria-label="Linkedin">
-                <i className="fab fa-linkedin"></i>
-              </a>
+              <h4 className="mj">Find us on :</h4>
               <a className="social-icon-link twitter" href="https://twitter.com/CodejetHq" aria-label="Twitter">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a className="social-icon-link Linkedin" href="https://www.linkedin.com/in/code-jet-aa3644223" aria-label="Linkedin">
+              <a className="social-icon-link Linkedin" href="https://www.instagram.com/codejet.online/?hl=en" aria-label="Linkedin">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a className="social-icon-link Linkedin" href="https://www.linkedin.com/in/codejethq/" aria-label="Linkedin">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a className="social-icon-link Linkedin" href="https://www.youtube.com/channel/UCgT135sKT2vvY04WDHN3muQ" aria-label="Linkedin">
+                <i className="fab fa-youtube"></i>
+              </a>
+              <a className="social-icon-link Linkedin" href="https://www.facebook.com/profile.php?id=100075058220913" aria-label="Linkedin">
                 <i class="fab fa-facebook"></i>
               </a>
             </div>
