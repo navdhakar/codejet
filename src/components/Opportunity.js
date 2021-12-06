@@ -104,7 +104,7 @@ function Opportunity() {
     // console.log(selected_project);
     const log = getCookie("auth_token");
 
-    if (log == "noauth" || null) {
+    if (!log) {
       history.push("/login");
     } else {
       const project_data = {

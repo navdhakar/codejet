@@ -43,7 +43,7 @@ export default function Profile() {
     console.log(header_data);
   }
   const log = getCookie("auth_token");
-  if (log == "noauth" || null) {
+  if (!log) {
     console.log("no login");
     window.location = "http://localhost:3000/login";
   }
