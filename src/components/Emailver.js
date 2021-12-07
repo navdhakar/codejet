@@ -61,6 +61,7 @@ function Emailver() {
         setCookie("auth_token", data.token_data);
         console.log(getCookie("auth_token"));
         history.push("/profile");
+        window.location.reload();
       })
       .catch((err) => {
         console.log(err);
