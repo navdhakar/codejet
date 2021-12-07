@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
 function Emailver() {
   const otpRef = useRef();
+  let history = useHistory();
 
   function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -59,7 +60,7 @@ function Emailver() {
         console.log(data);
         setCookie("auth_token", data.token_data);
         console.log(getCookie("auth_token"));
-        window.location = "http://localhost:3000/profile";
+        history.push("/profile");
       })
       .catch((err) => {
         console.log(err);

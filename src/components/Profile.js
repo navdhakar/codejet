@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link, Redirect, useHistory } from "react-router-dom";
 import "./Profile.css";
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
 export default function Profile() {
   const [profile_data, profile_load] = useState({});
   const [image, setImage] = useState();
+  let history = useHistory();
 
   /*const [state, setstate] = useState([])
    const [page, setPage] = useState(PAGE_NUMBER)*/
@@ -45,7 +46,7 @@ export default function Profile() {
   const log = getCookie("auth_token");
   if (!log) {
     console.log("no login");
-    window.location = "http://localhost:3000/login";
+    history.push("/login");
   }
   useEffect(() => {
     fetch(`${server}/signup/register/current`, {
