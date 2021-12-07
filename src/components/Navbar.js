@@ -27,7 +27,7 @@ function Navbar() {
     document.cookie = cname + "=" + cvalue + ";" + ";path=/";
   }
   function logout(e) {
-    setCookie("auth_token", null);
+    setCookie("auth_token", "");
     window.location.reload();
     // <Redirect to="/login" />;
     history.push("/login");

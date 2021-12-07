@@ -152,6 +152,7 @@ function Opportunity() {
             timer-placeholder
             timer-prelaunchenddate
             timer-type="campaign-timer"
+            style={{ height: "50%" }}
           >
             <div id="homepage-carousel" className="carousel slide" data-ride="carousel" data-interval={5000}>
               <ol className="carousel-indicators">
@@ -209,14 +210,6 @@ function Opportunity() {
                   Find Work
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link> */}
-                    <Link to="/Opportunity" style={{ marginRight: "30px", marginLeft: "-35px" }}>
-                      Free Internship &nbsp;&nbsp;&nbsp;&nbsp;
-                      <i aria-hidden="true" />
-                    </Link>
-                    <Link to="/paid">
-                      Paid Internship &nbsp;&nbsp;&nbsp;&nbsp;
-                      {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -226,7 +219,14 @@ function Opportunity() {
           <p className="heading" id="know-more" align="center">
             Projects
           </p>
-
+          <Link to="/Opportunity" style={{ marginRight: "30px", marginLeft: "-35px" }}>
+            Free Internship &nbsp;&nbsp;&nbsp;&nbsp;
+            <i aria-hidden="true" />
+          </Link>
+          <Link to="/paid">
+            Paid Internship &nbsp;&nbsp;&nbsp;&nbsp;
+            {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
+          </Link>
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
               <div className="category-heading">
