@@ -23,7 +23,7 @@ const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize("G-SCZWRQZ1HZ");
+    ReactGa.initialize("G-H96HSG3SJ0");
     ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
