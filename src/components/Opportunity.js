@@ -201,6 +201,10 @@ function Opportunity() {
             </div>
           </div>
 
+          <p className="heading" id="know-more" align="center">
+            Projects
+          </p>
+
           <div className="container-fluid gtco-banner-area" style={{ marginBottom: "-500px" }}>
             <div className="container">
               <div className="row">
@@ -210,23 +214,20 @@ function Opportunity() {
                   Find Work
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link> */}
+                    <Link to="/Opportunity" style={{ marginRight: "30px", marginLeft: "-35px" }}>
+                      Free Internship &nbsp;&nbsp;&nbsp;&nbsp;
+                      <i aria-hidden="true" />
+                    </Link>
+                    <Link to="/paid">
+                      Paid Internship &nbsp;&nbsp;&nbsp;&nbsp;
+                      {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <p className="heading" id="know-more" align="center">
-            Projects
-          </p>
-          <Link to="/Opportunity" style={{ marginRight: "30px", marginLeft: "-35px" }}>
-            Free Internship &nbsp;&nbsp;&nbsp;&nbsp;
-            <i aria-hidden="true" />
-          </Link>
-          <Link to="/paid">
-            Paid Internship &nbsp;&nbsp;&nbsp;&nbsp;
-            {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
-          </Link>
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
               <div className="category-heading">
