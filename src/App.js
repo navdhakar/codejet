@@ -18,6 +18,7 @@ import Profile from "./components/Profile";
 import Emailver from "./components/Emailver";
 import ProfileEdit from "./components/ProfileEdit";
 import ReactGa from "react-ga";
+import Paid from "./components/paid";
 
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/profile" exact component={Profile} />
         <Route path="/email_verification" exact component={Emailver} />
         <Route path="/edit_profile" exact component={ProfileEdit} />
+        <Route path="/paid" exact component={Paid} />
       </Switch>
       <Footer />
     </Router>
