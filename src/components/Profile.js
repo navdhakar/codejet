@@ -140,7 +140,7 @@ export default function Profile() {
               </div>
               <div className="card1 mt-3">
                 <ul className="list-group list-group-flush">
-                  <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                  {/* <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                     <h6 className="mb-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ export default function Profile() {
                       Website
                     </h6>
                     <span className="text-secondary">https://navdeep.xyz/</span>
-                  </li>
+                  </li> */}
                   <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                     <h6 className="mb-0">
                       <svg

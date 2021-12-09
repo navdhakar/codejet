@@ -226,7 +226,7 @@ export default function ProfileEdit() {
                   </div>
                   <hr className="my-4" />
                   <ul className="list-group list-group-flush">
-                    <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    {/* <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                       <h6 className="mb-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@ export default function ProfileEdit() {
                         Website
                       </h6>
                       <span className="text-secondary">https://bootdey.com</span>
-                    </li>
+                    </li> */}
                     <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                       <h6 className="mb-0">
                         <svg
