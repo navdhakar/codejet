@@ -61,7 +61,9 @@ function Login() {
         //console.log(hire_data);
         console.log(res.status);
         if (res.status == 400) {
-          setmsg("password didn't match");
+          res.json().then((resp) => {
+            setmsg(resp.response);
+          });
           throw new Error("password didn't match");
         }
         return res.json();
