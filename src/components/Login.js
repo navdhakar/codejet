@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
@@ -7,6 +7,7 @@ function Login() {
 
   const emailRef = useRef();
   const passwordRef = useRef();
+  const [errormsg, setmsg] = useState("");
 
   function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -58,6 +59,11 @@ function Login() {
       .then((res) => {
         //window.location.reload();
         //console.log(hire_data);
+        console.log(res.status);
+        if (res.status == 400) {
+          setmsg("password didn't match");
+          throw new Error("password didn't match");
+        }
         return res.json();
       })
       .then((data) => {
@@ -83,6 +89,12 @@ function Login() {
 
               <input type="email" ref={emailRef} className="form-control" placeholder="Email Address" />
               <input type="password" ref={passwordRef} className="form-control" placeholder="Password" />
+              {errormsg && (
+                <span className="error" style={{ color: "red" }}>
+                  {" "}
+                  {errormsg}{" "}
+                </span>
+              )}
               <a href="/" className="submit-button" onClick={login_detail}>
                 Login <i className="fa fa-angle-right" aria-hidden="true" />
               </a>

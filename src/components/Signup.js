@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
@@ -11,7 +11,7 @@ function Signup() {
   const collegeyearRef = useRef();
   const githubRef = useRef();
   const passwordRef = useRef();
-
+  const [errormsg, setmsg] = useState("");
   function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
@@ -65,7 +65,12 @@ function Signup() {
     })
       .then((res) => {
         //window.location.reload();
-        //console.log(hire_data);
+        console.log(res.status);
+        if (res.status == 400) {
+          console.log(res);
+          setmsg("email already registered");
+          throw new Error("user already exist please login");
+        }
         return res.json();
       })
       .then((data) => {
@@ -87,6 +92,12 @@ function Signup() {
               <h4>Student Register </h4>
               <input type="text" ref={usernameRef} className="form-control" placeholder="Username" />
               <input type="email" ref={emailRef} className="form-control" placeholder="Email Address" />
+              {errormsg && (
+                <span className="error" style={{ color: "red" }}>
+                  {" "}
+                  {errormsg}{" "}
+                </span>
+              )}
               <input type="text" ref={collegenameRef} className="form-control" placeholder="College name" />
               <input type="text" ref={branchRef} className="form-control" placeholder="College branch/course" />
 
