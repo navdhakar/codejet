@@ -77,6 +77,10 @@ export default function Profile() {
           college_year: data.college_year,
           college_branch: data.college_branch,
           github_profile: data.github_profile,
+          twitter_profile: data.twitter_profile,
+          instagram_profile: data.instagram_profile,
+          facebook_profile: data.facebook_profile,
+
           skills: data.skills,
           rating: data.rating,
         });
@@ -196,7 +200,7 @@ export default function Profile() {
                       </svg>
                       Twitter
                     </h6>
-                    <span className="text-secondary">@dev_navdeep</span>
+                    <span className="text-secondary">{profile_data.twitter_profile}</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                     <h6 className="mb-0">
@@ -218,7 +222,7 @@ export default function Profile() {
                       </svg>
                       Instagram
                     </h6>
-                    <span className="text-secondary">nav_dhakar</span>
+                    <span className="text-secondary">{profile_data.instagram_profile}</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                     <h6 className="mb-0">
@@ -238,7 +242,7 @@ export default function Profile() {
                       </svg>
                       Facebook
                     </h6>
-                    <span className="text-secondary">navdeep_dhakar</span>
+                    <span className="text-secondary">{profile_data.facebook_profile}</span>
                   </li>
                 </ul>
               </div>

@@ -19,6 +19,9 @@ export default function ProfileEdit() {
   const collegeyearRef = useRef();
   const githubRef = useRef();
   const skillsRef = useRef();
+  const twitterRef = useRef();
+  const instaRef = useRef();
+  const facebookRef = useRef();
 
   function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -85,6 +88,10 @@ export default function ProfileEdit() {
           college_year: data.college_year,
           college_branch: data.college_branch,
           github_profile: data.github_profile,
+          twitter_profile: data.twitter_profile,
+          instagram_profile: data.instagram_profile,
+          facebook_profile: data.facebook_profile,
+
           skills: data.skills,
         });
         setImage();
@@ -144,6 +151,9 @@ export default function ProfileEdit() {
       college_branch: branchRef.current.value,
       college_year: collegeyearRef.current.value,
       github_profile: githubRef.current.value,
+      instagram: instaRef.current.value,
+      twitter: twitterRef.current.value,
+      facebook: facebookRef.current.value,
       skills: skillsRef.current.value,
     };
     fetch(`${server}/signup/register/data_update`, {
@@ -276,7 +286,7 @@ export default function ProfileEdit() {
                         </svg>
                         Twitter
                       </h6>
-                      <span className="text-secondary">@bootdey</span>
+                      <input type="text" className="form-control" ref={twitterRef} defaultValue={profile_data.twitter_profile} />
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                       <h6 className="mb-0">
@@ -298,7 +308,7 @@ export default function ProfileEdit() {
                         </svg>
                         Instagram
                       </h6>
-                      <span className="text-secondary">bootdey</span>
+                      <input type="text" className="form-control" ref={instaRef} defaultValue={profile_data.instagram_profile} />
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                       <h6 className="mb-0">
@@ -318,7 +328,7 @@ export default function ProfileEdit() {
                         </svg>
                         Facebook
                       </h6>
-                      <span className="text-secondary">bootdey</span>
+                      <input type="text" className="form-control" ref={facebookRef} defaultValue={profile_data.facebook_profile} />
                     </li>
                   </ul>
                 </div>
@@ -385,7 +395,7 @@ export default function ProfileEdit() {
                   </div>
                 </div>
               </div>
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-sm-12">
                   <div className="card">
                     <div className="card-body">
@@ -448,7 +458,7 @@ export default function ProfileEdit() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
