@@ -627,10 +627,7 @@ function Opportunity() {
 
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
-              <div className="category-heading">
-                Intermediate level
-                <span className="course-count">(3)</span>
-              </div>
+              <div className="category-heading">Intermediate level</div>
               <div className="custom-carousel" data-category="Most_Popular">
                 <div className="slider">
                   <div className="slider-item ">
@@ -1026,10 +1023,7 @@ function Opportunity() {
 
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
-              <div className="category-heading">
-                Difficult level
-                <span className="course-count">(3)</span>
-              </div>
+              <div className="category-heading">Difficult level</div>
               <div className="custom-carousel" data-category="Most_Popular">
                 <div className="slider">
                   <div className="slider-item ">
