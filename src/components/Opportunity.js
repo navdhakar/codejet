@@ -127,7 +127,12 @@ function Opportunity() {
         referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         // body data type must match "Content-Type" header
       })
-        .then((response) => response.json())
+        .then((res) => {
+          if (res.status == 200) {
+            history.push("/apply");
+          }
+          return res.json();
+        })
         .then((result) => {
           console.log(result);
         })
@@ -205,12 +210,27 @@ function Opportunity() {
             Projects
           </p>
 
+
           <div className="row">
                 <div className="col" >
 
                     <Link className="btn btn-primary" to="/Opportunity" style={{float: "right" ,marginbottom: "5%"}}>
                       Free Internship 
                       {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
+
+          <div className="container-fluid gtco-banner-area" style={{ marginBottom: "-500px" }}>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="navnit" align="center" text-align="center">
+                    {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
+                  Find Work
+                  <i className="fa fa-angle-right" aria-hidden="true" />
+                </Link> */}
+                    <Link to="/Opportunity" style={{ marginRight: "30px", marginLeft: "-35px" }}>
+                      Free Internship
+                      <i className="fa fa-angle-right" aria-hidden="true" />
+
                     </Link>
                     </div>
                 <div className="col" >
@@ -617,10 +637,7 @@ function Opportunity() {
 
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
-              <div className="category-heading">
-                Intermediate level
-                <span className="course-count">(3)</span>
-              </div>
+              <div className="category-heading">Intermediate level</div>
               <div className="custom-carousel" data-category="Most_Popular">
                 <div className="slider">
                   <div className="slider-item ">
@@ -1016,10 +1033,7 @@ function Opportunity() {
 
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
-              <div className="category-heading">
-                Difficult level
-                <span className="course-count">(3)</span>
-              </div>
+              <div className="category-heading">Difficult level</div>
               <div className="custom-carousel" data-category="Most_Popular">
                 <div className="slider">
                   <div className="slider-item ">

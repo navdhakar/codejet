@@ -8,7 +8,7 @@ export default function Home() {
       <div className="container-fluid gtco-banner-area">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col">
               {/* Bridging Students learning and earning */}
               <h1>Bridging Students learning and earning</h1>
               <p className="text-left">

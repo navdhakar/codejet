@@ -3,24 +3,45 @@ import "./Community.css";
 export default function Community() {
   return (
     <div>
-      <div className="card-container" style={{ marginBottom: "20px" }}>
+      <h3 style={{ marginLeft: "5%", marginBottom: "2%" }}>Top students</h3>
+
+      <div className="card-container" style={{ marginBottom: "20px", height: "10%" }}>
         {/* <span className="pro">PRO</span> */}
         <img className="round" src="images/customer1.jpg" width="180" height="230" alt="user" style={{ float: "left" }} />
-        <h3 style={{ float: "left" }}>Shephali Bansal</h3>
         <div className="row">
           <div className="col">
-            <h6>Projects completed</h6>
-            <p className="textAlign">
-              🔸Marketing Agency Website
-              <br />
-              🔸IOS App Design
-              <br />
-              🔸Text Editor
-            </p>
+            <h3 style={{ float: "left" }}>Shephali Bansal</h3>
           </div>
-          <div className="col">
-            <h6>Rating</h6>
-            <p>⭐⭐⭐⭐⭐</p>
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Projects completed</h6>
+            </div>
+            <ul style={{ color: "black" }}>
+              <div className="row">
+                <li>
+                  <nobr>Marketing Agency Website</nobr>
+                </li>
+              </div>
+              <div className="row">
+                <li>
+                  <nobr>IOS App Design</nobr>
+                </li>
+              </div>
+              <div className="row">
+                <li>
+                  <nobr>Text Editor</nobr>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Rating</h6>
+            </div>
+            <div className="row">
+              <p>⭐⭐⭐⭐</p>
+            </div>
           </div>
         </div>
         {/* <div className="buttons">
@@ -48,29 +69,51 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="card-container" style={{ marginBottom: "20px" }}>
+      <div className="card-container" style={{ marginBottom: "20px", height: "10%" }}>
         {/* <span className="pro">PRO</span> */}
         <img className="round" src="images/customer2.jpg" width="180" height="230" alt="user" style={{ float: "left" }} />
-        <h3 style={{ float: "left" }}>Mayank Gupta</h3>
+
         <div className="row">
           <div className="col">
-            <h6>Projects completed</h6>
-            <p className="textAlign">
-              🔸Online Banking Project
-              <br />
-              🔸Music streaming app
-            </p>
+            <h3 style={{ float: "left" }}>Mayank Gupta</h3>
           </div>
-          <div className="col">
-            <h6>Rating</h6>
-            <p>⭐⭐⭐⭐⭐</p>
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Projects completed</h6>
+            </div>
+            <ul style={{ color: "black" }}>
+              <div className="row">
+                <li>
+                  <nobr>Online Banking Project</nobr>
+                </li>
+              </div>
+              <div className="row">
+                <li>
+                  <nobr>Music streaming app</nobr>
+                </li>
+              </div>
+              {/* <div className="row">
+                <li>
+                  <nobr>Text Editor</nobr>
+                </li>
+              </div> */}
+            </ul>
+          </div>
+
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Rating</h6>
+            </div>
+            <div className="row">
+              <p>⭐⭐⭐⭐</p>
+            </div>
           </div>
         </div>
         {/* <div className="buttons">
@@ -94,7 +137,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
@@ -104,19 +147,40 @@ export default function Community() {
       <div className="card-container" style={{ marginBottom: "20px" }}>
         {/* <span className="pro">PRO</span> */}
         <img className="round" src="images/customer3.jpg" width="180" height="230" alt="user" style={{ float: "left" }} />
-        <h3 style={{ float: "left" }}>Priyanka Gupta</h3>
         <div className="row">
           <div className="col">
-            <h6>Projects completed</h6>
-            <p className="textAlign">
-              🔸Broadcasting Chatserver
-              <br />
-              🔸Travel Website
-            </p>
+            <h3 style={{ float: "left" }}>Priyanka Gupta</h3>
           </div>
-          <div className="col">
-            <h6>Rating</h6>
-            <p>⭐⭐⭐⭐</p>
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Projects completed</h6>
+            </div>
+            <ul style={{ color: "black" }}>
+              <div className="row">
+                <li>
+                  <nobr>Broadcasting Chatserver</nobr>
+                </li>
+              </div>
+              <div className="row">
+                <li>
+                  <nobr>Travel Website</nobr>
+                </li>
+              </div>
+              {/* <div className="row">
+                <li>
+                  <nobr>Text Editor</nobr>
+                </li>
+              </div> */}
+            </ul>
+          </div>
+
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Rating</h6>
+            </div>
+            <div className="row">
+              <p>⭐⭐⭐</p>
+            </div>
           </div>
         </div>
         {/* <div className="buttons">
@@ -142,7 +206,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
@@ -152,18 +216,40 @@ export default function Community() {
       <div className="card-container" style={{ marginBottom: "20px" }}>
         {/* <span className="pro">PRO</span> */}
         <img className="round" src="images/customer4.jpg" width="180" height="230" alt="user" style={{ float: "left" }} />
-        <h3 style={{ float: "left" }}>Divya Agarwal</h3>
         <div className="row">
           <div className="col">
-            <h6>Projects completed</h6>
-            <p className="textAlign">
-              🔸Hotel Management Website <br />
-              🔸Biomatric Enrollment app
-            </p>
+            <h3 style={{ float: "left" }}>Divya Agarwal</h3>
           </div>
-          <div className="col">
-            <h6>Rating</h6>
-            <p>⭐⭐⭐⭐</p>
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Projects completed</h6>
+            </div>
+            <ul style={{ color: "black" }}>
+              <div className="row">
+                <li>
+                  <nobr>Hotel Management Website</nobr>
+                </li>
+              </div>
+              <div className="row">
+                <li>
+                  <nobr>Biomatric Enrollment app</nobr>
+                </li>
+              </div>
+              {/* <div className="row">
+                <li>
+                  <nobr>Text Editor</nobr>
+                </li>
+              </div> */}
+            </ul>
+          </div>
+
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Rating</h6>
+            </div>
+            <div className="row">
+              <p>⭐⭐</p>
+            </div>
           </div>
         </div>
         {/* <div className="buttons">
@@ -187,7 +273,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
@@ -197,18 +283,40 @@ export default function Community() {
       <div className="card-container" style={{ marginBottom: "20px" }}>
         {/* <span className="pro">PRO</span> */}
         <img className="round" src="images/customer5.jpg" width="180" height="230" alt="user" style={{ float: "left" }} />
-        <h3 style={{ float: "left" }}>Rajat Agarwal</h3>
         <div className="row">
           <div className="col">
-            <h6>Projects completed</h6>
-            <p className="textAlign">
-              🔸Ecommerce Website <br />
-              🔸React native app
-            </p>
+            <h3 style={{ float: "left" }}>Rajat Agarwal</h3>
           </div>
-          <div className="col">
-            <h6>Rating</h6>
-            <p>⭐⭐⭐</p>
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Projects completed</h6>
+            </div>
+            <ul style={{ color: "black" }}>
+              <div className="row">
+                <li>
+                  <nobr>Ecommerce Website</nobr>
+                </li>
+              </div>
+              <div className="row">
+                <li>
+                  <nobr>React native app</nobr>
+                </li>
+              </div>
+              {/* <div className="row">
+                <li>
+                  <nobr>Text Editor</nobr>
+                </li>
+              </div> */}
+            </ul>
+          </div>
+
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Rating</h6>
+            </div>
+            <div className="row">
+              <p>⭐⭐</p>
+            </div>
           </div>
         </div>
         {/* <div className="buttons">
@@ -232,7 +340,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@ export default function Why() {
             new technology and so will be your product.
           </p>
 
-          <p style={{ paddingBottom: "20px" }}>● you will be hiring new and fresh mindset of developer which is open to new opportunities and hard tasks.</p>
+          <p style={{ paddingBottom: "20px" }}>● you will be hiring new and fresh mindset of developer who are open to new opportunities and hard tasks.</p>
           <p style={{ paddingBottom: "20px" }}>
             ● If you have a startup idea, you can find highly motivated and tech enthusiastic developers to take it to the next big step.
           </p>
@@ -44,25 +44,23 @@ export default function Why() {
             ● We are not like other service based company , our team of developer is focussed solely on your project providing best service and support for you.
           </p>
           <p style={{ paddingBottom: "20px" }}>So what are you waiting for 🤗!!</p>
-          <div className="container-fluid gtco-banner-area" style={{ marginBottom: "-500px" }}>
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="navnik">
-                    {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
+          <div className=" gtco-banner" style={{ width: "100%" }}>
+            <div className="row">
+              {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
                   Find Work
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link> */}
-                    <Link to="/contact" className="mohirti" style={{ marginRight: "30px", marginLeft: "-35px" }}>
-                      Contact us
-                      <i className="fa fa-angle-right" aria-hidden="true" />
-                    </Link>
-                    <Link to="/hireus">
-                      Hire us
-                      <i className="fa fa-angle-right" aria-hidden="true" />
-                    </Link>
-                  </div>
-                </div>
+              <div className="col" style={{ marginBottom: "10%" }}>
+                <Link className=" btn btn-primary btn-lg" to="/contact">
+                  Contact us
+                  {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
+                </Link>
+              </div>
+              <div className="col">
+                <Link className=" btn btn-primary" to="/hireus">
+                  Hire us
+                  {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
+                </Link>
               </div>
             </div>
           </div>
