@@ -104,9 +104,16 @@ function Signup() {
               <input type="text" ref={collegeyearRef} className="form-control" placeholder="College year" />
               <input type="text" ref={githubRef} className="form-control" placeholder="Github profile" />
               <input type="password" ref={passwordRef} className="form-control" placeholder="Password" />
-              <a href="/" className="submit-button" onClick={user_detail}>
-                Sign-Up <i className="fa fa-angle-right" aria-hidden="true" />
-              </a>
+              <div className="row">
+                <span>
+                  By signing up you are agreeing to our <a href="/terms">Terms and condition</a>
+                </span>
+              </div>
+              <div className="row">
+                <a href="/" className="submit-button" onClick={user_detail}>
+                  Sign-Up <i className="fa fa-angle-right" aria-hidden="true" />
+                </a>
+              </div>
               <h5 style={{ marginTop: "20px" }}>
                 <Link to="/login">Already have an account?</Link>
               </h5>

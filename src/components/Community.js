@@ -69,7 +69,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
@@ -273,7 +273,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>
@@ -340,7 +340,7 @@ export default function Community() {
             <div className="col">
               <div className="buttons" style={{ float: "right" }}>
                 {/* <button className="primary">Message</button> */}
-                <button className="primary ghost">See More</button>
+                {/* <button className="primary ghost">See More</button> */}
               </div>
             </div>
           </div>

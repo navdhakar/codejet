@@ -127,7 +127,12 @@ function Opportunity() {
         referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         // body data type must match "Content-Type" header
       })
-        .then((response) => response.json())
+        .then((res) => {
+          if (res.status == 200) {
+            history.push("/apply");
+          }
+          return res.json();
+        })
         .then((result) => {
           console.log(result);
         })
@@ -215,7 +220,7 @@ function Opportunity() {
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link> */}
                     <Link to="/Opportunity" style={{ marginRight: "30px", marginLeft: "-35px" }}>
-                      Free Internship 
+                      Free Internship
                       <i className="fa fa-angle-right" aria-hidden="true" />
                     </Link>
                     <Link to="/paid">
