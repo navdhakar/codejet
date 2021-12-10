@@ -14,6 +14,7 @@ import About from "./components/About";
 import Why from "./components/Why";
 import Hired from "./components/Hired";
 import Community from "./components/Community";
+import terms from "./components/terms";
 import Profile from "./components/Profile";
 import Emailver from "./components/Emailver";
 import ProfileEdit from "./components/ProfileEdit";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/about" exact component={About} />
         <Route path="/hired" exact component={Hired} />
         <Route path="/community" exact component={Community} />
+        <Route path="/terms" exact component={terms} />
         <Route path="/profile" exact component={Profile} />
         <Route path="/email_verification" exact component={Emailver} />
         <Route path="/edit_profile" exact component={ProfileEdit} />

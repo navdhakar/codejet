@@ -92,6 +92,7 @@ function Footer() {
               <Link to="/opportunity">Opportunities</Link>
               <Link to="/hireus">Hire</Link>
               <Link to="/services">Services</Link>
+              <Link to="/terms">Terms & Conditions</Link>
             </div>
             <div className="footer-link-items">
               <h2>Contact Us</h2>

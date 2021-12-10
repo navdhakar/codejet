@@ -70,18 +70,18 @@ function Opportunity() {
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
-                  <div className="navnit" align="center">
+                  <div  align="center">
                     {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
                   Find Work
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link> */}
                     <Link to="/Opportunity" style={{ marginRight: "30px", marginLeft: "-35px" }}>
-                      Free Internship &nbsp;&nbsp;&nbsp;&nbsp;
-                      <i aria-hidden="true" />
+                      Free Internship 
+                      <i className="fa fa-angle-right" aria-hidden="true" />
                     </Link>
                     <Link to="/paid">
-                      Paid Internship &nbsp;&nbsp;&nbsp;&nbsp;
-                      {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
+                      Paid Internship
+                      <i className="fa fa-angle-right" aria-hidden="true" />
                     </Link>
                   </div>
                 </div>
