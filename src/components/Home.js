@@ -17,19 +17,40 @@ export default function Home() {
                 <br></br>
                 <strong>you got the right idea we got the right team.</strong>
               </p>
+
+              {/* <div className="col-md-10"> */}
+              <div className="row">
+              
+                <div className="row-md-5">
               <div className="navnik">
-                <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
+                <Link to="/opportunity" className="mohirti" style={{ marginRight: "20px" }}>
                   Opportunity
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link>
-                <Link to="/why" className="mohirti" style={{ marginRight: "30px" }}>
+              </div>
+              </div>
+
+              <div className="row-md-5" >
+              <div className="navnik">
+              <Link to="/why" className="mohirti" style={{ marginRight: "20px" }}>
                   Why us
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link>
-                <Link to="/hireus">
+              </div>
+              </div>
+
+
+              <div className="row-md-5" >
+              <div className="navnik">
+              <Link to="/hireus">
                   Hire us
                   <i className="fa fa-angle-right" aria-hidden="true" />
                 </Link>
+                </div>
+                {/* </div> */}
+              </div>
+
+
               </div>
             </div>
 
@@ -64,7 +85,7 @@ export default function Home() {
                         <path d="M89.479,0.180 L512.635,25.932 C568.395,29.326 603.115,76.927 590.357,129.078 L528.827,380.603 C518.688,422.048 472.661,448.814 427.190,443.300 L73.350,400.391 C32.374,395.422 -0.267,360.907 -0.002,322.064 L1.609,85.154 C1.938,36.786 40.481,-2.801 89.479,0.180 Z" />
                       </clipPath>
                       {/* xlink:href for modern browsers, src for IE8- */}
-                      <image clipPath="url(#clip-path)" xlinkHref="images/learn-img.gif" width="80%" height="100%" className="svg__image" />
+                      <image clipPath="url(#clip-path)" xlinkHref="images/learn-img.gif" width="70%" height="100%" className="svg__image" />
                     </svg>
                   </div>
                 </div>
