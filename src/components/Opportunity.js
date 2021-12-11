@@ -208,7 +208,7 @@ function Opportunity() {
           <div className="row">
                 <div className="col" >
 
-                    <Link className="btn btn-primary" to="/Opportunity" style={{float: "right" ,marginbottom: "5%"}}>
+                    <Link className="btn btn-primary  to="/Opportunity" style={{float: "right" ,marginbottom: "5%"}}>
                       Free Internship 
                       {/* <i className="fa fa-angle-right" aria-hidden="true" /> */}
                     </Link>

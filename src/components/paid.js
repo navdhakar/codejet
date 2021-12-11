@@ -71,10 +71,6 @@ function Opportunity() {
          
           
               <div className="row">
-                    {/* <Link to="/opportunity" className="mohirti" style={{ marginRight: "30px" }}>
-                  Find Work
-                  <i className="fa fa-angle-right" aria-hidden="true" />
-                </Link> */}
                 <div className="col" >
 
                     <Link className="btn btn-primary" to="/Opportunity" style={{float: "right" ,marginbottom: "5%"}}>

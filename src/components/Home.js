@@ -67,7 +67,7 @@ export default function Home() {
         <div className="container-fluid gtco-feature" id="services">
           <div className="container">
             <div className="row">
-              <div className="col-md-7">
+              <div className="col-md-6">
                 <div className="cover">
                   <div className="card">
                     {/* <svg className="back-bg" width="100%" viewBox="0 0 900 700" style={{position: 'absolute', zIndex: -1}}>
