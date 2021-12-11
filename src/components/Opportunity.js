@@ -254,7 +254,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -304,7 +304,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -349,7 +349,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -396,7 +396,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -456,7 +456,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -501,7 +501,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -545,7 +545,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -589,7 +589,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -646,7 +646,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -691,7 +691,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -737,7 +737,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -783,7 +783,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -845,7 +845,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -891,7 +891,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -937,7 +937,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -983,7 +983,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1039,7 +1039,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1086,7 +1086,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1138,7 +1138,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1185,7 +1185,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1253,7 +1253,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1305,7 +1305,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1350,7 +1350,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
@@ -1402,7 +1402,7 @@ function Opportunity() {
                                 <div
                                   className="line-container"
                                   style={{
-                                    paddingTop: "8px",
+                                    paddingTop: "4px",
                                     paddingLeft: "8px",
                                     paddingBottom: "6px",
                                   }}
