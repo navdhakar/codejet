@@ -70,6 +70,10 @@ function Hire() {
         <div className="container">
           <div className="row">
             <div className="col" id="contact">
+              <h5>
+                If your organization is hiring, kindly fill up this form and our team will get in touch with you. so we can provide best developer for the job
+              </h5>
+              <br />
               <h4> Hire Us </h4>
               <input type="text" ref={companynameRef} className="form-control" placeholder="Company Name" />
               <input type="text" ref={contactRef} className="form-control" placeholder="Company Contact Number" />

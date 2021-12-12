@@ -3,7 +3,7 @@ import "./Community.css";
 export default function Community() {
   return (
     <div>
-      <h3 style={{ marginLeft: "5%", marginBottom: "2%" }}>Top students</h3>
+      <h3 style={{ marginLeft: "5%", marginBottom: "2%" }}>Top developers</h3>
 
       <div className="card-container" style={{ marginBottom: "20px", height: "10%" }}>
         {/* <span className="pro">PRO</span> */}
