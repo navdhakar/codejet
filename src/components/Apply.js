@@ -8,7 +8,7 @@ export default function Apply() {
           <div className="row">
             <div className="col">
               <h2>
-                🎉You have successfully applied to project 🎉, <br /> you will recieve email regarding the project details, conditions and duration.{" "}
+                🎉You have successfully applied to internship 🎉, <br /> you will recieve email regarding the project details, conditions and duration.{" "}
               </h2>
             </div>
           </div>
