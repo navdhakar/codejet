@@ -115,7 +115,7 @@ function Opportunity() {
         college_year: profile_data.college_year,
         selected_project: selected_project,
       };
-      const confirmBox = window.confirm("Do you really want to appyly for this project?");
+      const confirmBox = window.confirm("Do you really want to apply for this project?");
       if (confirmBox === true) {
         fetch(`${server}/students/opportunity/selected_project`, {
           method: "POST",
