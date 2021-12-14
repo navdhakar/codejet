@@ -115,30 +115,33 @@ function Paid() {
         college_year: profile_data.college_year,
         selected_project: selected_project,
       };
-      fetch(`${server}/students/opportunity/selected_project`, {
-        method: "POST",
-        body: JSON.stringify(project_data), // *GET, POST, PUT, DELETE, etc.
-        mode: "cors",
-        // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: header_data,
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        // body data type must match "Content-Type" header
-      })
-        .then((res) => {
-          if (res.status == 200) {
-            history.push("/apply");
-          }
-          return res.json();
+      const confirmBox = window.confirm("Do you really want to appyly for this project?");
+      if (confirmBox === true) {
+        fetch(`${server}/students/opportunity/selected_project`, {
+          method: "POST",
+          body: JSON.stringify(project_data), // *GET, POST, PUT, DELETE, etc.
+          mode: "cors",
+          // no-cors, *cors, same-origin
+          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: header_data,
+          redirect: "follow", // manual, *follow, error
+          referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          // body data type must match "Content-Type" header
         })
-        .then((result) => {
-          console.log(result);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
+          .then((res) => {
+            if (res.status == 200) {
+              history.push("/apply");
+            }
+            return res.json();
+          })
+          .then((result) => {
+            console.log(result);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
     }
     console.log(project_data);
     event.preventDefault();
