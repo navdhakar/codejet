@@ -209,9 +209,7 @@ function Paid() {
             </div>
           </div>
 
-          <p className="heading" id="know-more" align="center">
-            Projects
-          </p>
+          <p className="heading" id="know-more" align="center"></p>
 
           <div className="row">
             <div className="col">
@@ -231,7 +229,6 @@ function Paid() {
           <div id="courses-container" className="max-width-container">
             <div id="MostPopular" className="category-container">
               <div className="category-heading">
-                level
                 <span className="course-count"></span>
               </div>
               <div className="custom-carousel" data-category="Most_Popular">
