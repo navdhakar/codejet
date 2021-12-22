@@ -29,7 +29,7 @@ export default function Community() {
               </div>
               <div className="row">
                 <li>
-                  <nobr>Text Editor</nobr>
+                  <nobr>Web dev</nobr>
                 </li>
               </div>
             </ul>
