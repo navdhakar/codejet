@@ -20,37 +20,41 @@ export default function Home() {
 
               {/* <div className="col-md-10"> */}
               <div className="row">
-              
                 <div className="row-md-5">
-              <div className="navnik">
-                <Link to="/opportunity" className="mohirti" style={{ marginRight: "20px" }}>
-                  Opportunity
-                  <i className="fa fa-angle-right" aria-hidden="true" />
-                </Link>
-              </div>
-              </div>
-
-              <div className="row-md-5" >
-              <div className="navnik">
-              <Link to="/why" className="mohirti" style={{ marginRight: "20px" }}>
-                  Why us
-                  <i className="fa fa-angle-right" aria-hidden="true" />
-                </Link>
-              </div>
-              </div>
-
-
-              <div className="row-md-5" >
-              <div className="navnik">
-              <Link to="/hireus">
-                  Hire us
-                  <i className="fa fa-angle-right" aria-hidden="true" />
-                </Link>
+                  <div className="navnik">
+                    <Link to="/opportunity" className="mohirti" style={{ marginRight: "20px" }}>
+                      Opportunity
+                      <i className="fa fa-angle-right" aria-hidden="true" />
+                    </Link>
+                  </div>
                 </div>
-                {/* </div> */}
-              </div>
 
+                <div className="row-md-5">
+                  <div className="navnik">
+                    <Link to="/why" className="mohirti" style={{ marginRight: "20px" }}>
+                      Why us
+                      <i className="fa fa-angle-right" aria-hidden="true" />
+                    </Link>
+                  </div>
+                </div>
 
+                <div className="row-md-5">
+                  <div className="navnik">
+                    <Link to="/hireus">
+                      Hire us
+                      <i className="fa fa-angle-right" aria-hidden="true" />
+                    </Link>
+                  </div>
+                  {/* </div> */}
+                </div>
+                <div className="row-md-5">
+                  <div className="navnik" style={{ marginTop: "10%" }}>
+                    <Link to="/community">
+                      Community
+                      <i className="fa fa-angle-right" aria-hidden="true" />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
 
