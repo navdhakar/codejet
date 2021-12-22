@@ -3,14 +3,14 @@ import "./Community.css";
 export default function Community() {
   return (
     <div>
-      <h3 style={{ marginLeft: "5%", marginBottom: "2%" }}>Top developers</h3>
+      <h3 style={{ marginLeft: "5%", marginBottom: "2%" }}>Top developers </h3>
 
       <div className="card-container" style={{ marginBottom: "20px", height: "10%" }}>
         {/* <span className="pro">PRO</span> */}
         <img className="round" src="images/customer1.jpg" width="180" height="230" alt="user" style={{ float: "left" }} />
         <div className="row">
           <div className="col">
-            <h3 style={{ float: "left" }}>Shephali Bansal</h3>
+            <h3 style={{ float: "left" }}>raghav gupta</h3>
           </div>
           <div className="col" style={{ marginLeft: "5%" }}>
             <div className="row">
@@ -40,7 +40,7 @@ export default function Community() {
               <h6>Rating</h6>
             </div>
             <div className="row">
-              <p>⭐⭐⭐⭐</p>
+              <p>⭐⭐⭐</p>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function Community() {
               <h6>Rating</h6>
             </div>
             <div className="row">
-              <p>⭐⭐⭐⭐</p>
+              <p>⭐⭐⭐</p>
             </div>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function Community() {
               <h6>Rating</h6>
             </div>
             <div className="row">
-              <p>⭐⭐⭐</p>
+              <p>⭐⭐</p>
             </div>
           </div>
         </div>
