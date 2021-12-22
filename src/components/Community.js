@@ -10,7 +10,7 @@ export default function Community() {
         <img className="round" src="images/customer1.jpg" width="180" height="230" alt="user" style={{ float: "left" }} />
         <div className="row">
           <div className="col">
-            <h3 style={{ float: "left" }}>raghav gupta</h3>
+            <h3 style={{ float: "left" }}>Raghav gupta</h3>
           </div>
           <div className="col" style={{ marginLeft: "5%" }}>
             <div className="row">
