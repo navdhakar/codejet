@@ -27,11 +27,11 @@ export default function Community() {
                   <nobr>IOS App Design</nobr>
                 </li>
               </div>
-              <div className="row">
+              {/* <div className="row">
                 <li>
                   <nobr>Web dev</nobr>
                 </li>
-              </div>
+              </div> */}
             </ul>
           </div>
 
@@ -294,19 +294,14 @@ export default function Community() {
             <ul style={{ color: "black" }}>
               <div className="row">
                 <li>
-                  <nobr>Ecommerce Website</nobr>
+                  <nobr>Ecommerce platform </nobr>
                 </li>
               </div>
               <div className="row">
                 <li>
-                  <nobr>React native app</nobr>
+                  <nobr>React native app </nobr>
                 </li>
               </div>
-              {/* <div className="row">
-                <li>
-                  <nobr>Text Editor</nobr>
-                </li>
-              </div> */}
             </ul>
           </div>
 

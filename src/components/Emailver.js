@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
 function Emailver() {
   const otpRef = useRef();
   let history = useHistory();
+  const [errormsg, setmsg] = useState("");
 
   function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -54,6 +55,11 @@ function Emailver() {
       .then((res) => {
         //window.location.reload();
         //console.log(hire_data);
+        if (res.status == 400) {
+          console.log(res);
+          setmsg("OTP didn't match");
+          throw new Error("OTP didn't match");
+        }
         return res.json();
       })
       .then((data) => {
@@ -77,6 +83,12 @@ function Emailver() {
               <h4>Verify your email</h4>
 
               <input type="email" ref={otpRef} className="form-control" placeholder="OTP" />
+              {errormsg && (
+                <span className="error" style={{ color: "red" }}>
+                  {" "}
+                  {errormsg}{" "}
+                </span>
+              )}
               <a href="/" className="submit-button" onClick={otp_check}>
                 Verify <i className="fa fa-angle-right" aria-hidden="true" />
               </a>
