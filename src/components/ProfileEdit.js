@@ -188,7 +188,7 @@ export default function ProfileEdit() {
               <div className="card1">
                 <div className="card-body">
                   <div className="d-flex flex-column align-items-center text-center">
-                    <img src={image} alt="Admin" className="rounded p-1 bg-primary" width={110} />
+                    <img src={image} alt="Profile image" className="rounded p-1 bg-primary" width={110} />
 
                     <div className="row">
                       <form>
@@ -201,8 +201,8 @@ export default function ProfileEdit() {
                             <div>
                               <p>Imagename: {selectedFile.name}</p>
                               <p>Filetype: {selectedFile.type}</p>
-                              <p>Size in bytes: {selectedFile.size}</p>
-                              <p>lastModifiedDate: {selectedFile.lastModifiedDate.toLocaleDateString()}</p>
+                              {/* <p>Size in bytes: {selectedFile.size}</p>
+                              <p>lastModifiedDate: {selectedFile.lastModifiedDate.toLocaleDateString()}</p> */}
                             </div>
                           ) : (
                             <p>Select a image file</p>

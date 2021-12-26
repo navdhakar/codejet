@@ -123,7 +123,7 @@ export default function Profile() {
               <div className="card1">
                 <div className="card1-body">
                   <div className="d-flex flex-column align-items-center text-center">
-                    <img src={image} alt="Admin" className="rounded" width={150} />
+                    <img src={image} alt="Profile image" className="rounded" width={150} />
                     <div className="mt-3">
                       <h4>{profile_data.name}</h4>
                       <div className="col">
