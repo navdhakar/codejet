@@ -92,7 +92,7 @@ function Footer() {
                   />
                 </svg>
               </div>
-              <span>Join our Discord</span>
+              <span>Join us on Discord</span>
             </a>
           </div>
         </section>
