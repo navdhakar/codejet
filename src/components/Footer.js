@@ -137,7 +137,7 @@ function Footer() {
               <a className="social-icon-link Linkedin" href="https://www.youtube.com/channel/UCgT135sKT2vvY04WDHN3muQ" aria-label="Linkedin">
                 <i className="fab fa-youtube"></i>
               </a>
-              <a className="social-icon-link Linkedin" href="https://www.facebook.com/profile.php?id=100075058220913" aria-label="Linkedin">
+              <a className="social-icon-link Linkedin" href="https://www.facebook.com/Codejet-100550882512015/?ref=pages_you_manage" aria-label="Linkedin">
                 <i class="fab fa-facebook"></i>
               </a>
             </div>
