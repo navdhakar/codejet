@@ -14,8 +14,8 @@ export default function Home() {
               {/* We provide revolutionary <strong>IT services</strong> and <strong>TECH team</strong> for new and early stage startups and businesses from best
                 students minds across country at very affordable prices */}
               <p className="text-left">
-                <strong>•</strong>We help students in creating <strong>proof of work</strong> through our paid/unpaid internships programmes and help them
-                network with other peers of similar field.
+                <strong>•</strong>We help students in creating <strong>proof of work</strong> through our paid/unpaid internships and help them network with
+                other peers of similar field.
                 <br></br>
                 <strong>•</strong>We provide best IT team for new and early stage startups.
                 <br></br>
