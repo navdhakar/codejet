@@ -73,7 +73,7 @@ function Navbar() {
           <button className="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
             <span className="bar1" /> <span className="bar2" /> <span className="bar3" />
           </button>
-          <div id="my-nav" className="collapse navbar-collapse navnik3">
+          <div id="my-nav" className=" navbar-collapse navnik3">
             <ul className="navbar-nav mr-auto ">
               <li className="nav-item">
                 <Link className="nav-link" to="/">

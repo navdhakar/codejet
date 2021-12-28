@@ -11,9 +11,13 @@ export default function Home() {
             <div className="col">
               {/* Bridging Students learning and earning */}
               <h1>Bridging Students learning and earning</h1>
+              {/* We provide revolutionary <strong>IT services</strong> and <strong>TECH team</strong> for new and early stage startups and businesses from best
+                students minds across country at very affordable prices */}
               <p className="text-left">
-                We provide revolutionary <strong>IT services</strong> and <strong>TECH team</strong> for new and early stage startups and businesses from best
-                students minds across country at very affordable prices.
+                <strong>•</strong>We help students in creating <strong>proof of work</strong> through our paid/unpaid internships programmes and help them
+                network with other peers of similar field.
+                <br></br>
+                <strong>•</strong>We provide best IT team for new and early stage startups.
                 <br></br>
                 <strong>you got the right idea we got the right team.</strong>
               </p>
