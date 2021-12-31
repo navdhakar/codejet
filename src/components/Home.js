@@ -34,16 +34,7 @@ export default function Home() {
                 </div>
 
                 <div className="row-md-5">
-                  <div className="navnik">
-                    <Link to="/why" className="mohirti" style={{ marginRight: "20px" }}>
-                      Why us
-                      <i className="fa fa-angle-right" aria-hidden="true" />
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="row-md-5">
-                  <div className="navnik">
+                  <div className="navnik" style={{ marginRight: "20px" }}>
                     <Link to="/hireus">
                       Hire us
                       <i className="fa fa-angle-right" aria-hidden="true" />
@@ -52,7 +43,7 @@ export default function Home() {
                   {/* </div> */}
                 </div>
                 <div className="row-md-5">
-                  <div className="navnik" style={{ marginTop: "10%" }}>
+                  <div className="navnik">
                     <Link to="/community">
                       Community
                       <i className="fa fa-angle-right" aria-hidden="true" />

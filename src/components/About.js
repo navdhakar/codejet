@@ -27,6 +27,16 @@ function About() {
         </div>
       </div>
       <br></br>
+      <div className="gtco-banner-area" style={{ marginBottom: "-420px" }}>
+        <div className="row-md">
+          <div className="navnik ">
+            <Link to="/why">
+              Why us
+              <i className="fa fa-angle-right" aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+      </div>
       <div id="discord-button">
         <a href="https://discord.gg/V3PN23dPTH">
           <div class="icon">
