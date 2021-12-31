@@ -34,7 +34,7 @@ export default function Home() {
                 </div>
 
                 <div className="row-md-5">
-                  <div className="navnik">
+                  <div className="navnik" style={{ marginRight: "20px" }}>
                     <Link to="/community" className="mohirti">
                       Community
                       <i className="fa fa-angle-right" aria-hidden="true" />
@@ -42,7 +42,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="row-md-5">
-                  <div className="navnik" style={{ marginRight: "20px" }}>
+                  <div className="navnik">
                     <Link to="/hireus" className="mohirti">
                       Hire us
                       <i className="fa fa-angle-right" aria-hidden="true" />

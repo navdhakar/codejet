@@ -341,6 +341,70 @@ export default function Community() {
           </div>
         </div>
       </div>
+      <div className="card-container" style={{ marginBottom: "20px" }}>
+        {/* <span className="pro">PRO</span> */}
+        <img className="round" src="" width="180" alt="profile image" height="230" style={{ float: "left" }} />
+        <div className="row">
+          <div className="col">
+            <h3 style={{ float: "left" }}>thejayeshsoni</h3>
+          </div>
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Projects completed</h6>
+            </div>
+            <ul style={{ color: "black" }}>
+              <div className="row">
+                <li>
+                  <nobr>No project completed</nobr>
+                </li>
+              </div>
+              <div className="row">
+                <li>
+                  <nobr>No project completed</nobr>
+                </li>
+              </div>
+              {/* <div className="row">
+                <li>
+                  <nobr>Text Editor</nobr>
+                </li>
+              </div> */}
+            </ul>
+          </div>
+
+          <div className="col" style={{ marginLeft: "5%" }}>
+            <div className="row">
+              <h6>Rating</h6>
+            </div>
+            <div className="row">
+              <p>⭐</p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="buttons">
+          <button className="primary">Message</button>
+          <button className="primary ghost">Following</button>
+        </div> */}
+        <div className="skills">
+          <h6 style={{ color: "#fff" }}>Skills</h6>
+          <div className="row">
+            <div className="col">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                {/* <li>React</li>
+                <li>Node</li> */}
+              </ul>
+            </div>
+            <div className="col">
+              <div className="buttons" style={{ float: "right" }}>
+                {/* <button className="primary">Message</button> */}
+                {/* <button className="primary ghost">See More</button> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
