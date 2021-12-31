@@ -34,21 +34,21 @@ export default function Home() {
                 </div>
 
                 <div className="row-md-5">
+                  <div className="navnik">
+                    <Link to="/community" className="mohirti">
+                      Community
+                      <i className="fa fa-angle-right" aria-hidden="true" />
+                    </Link>
+                  </div>
+                </div>
+                <div className="row-md-5">
                   <div className="navnik" style={{ marginRight: "20px" }}>
-                    <Link to="/hireus">
+                    <Link to="/hireus" className="mohirti">
                       Hire us
                       <i className="fa fa-angle-right" aria-hidden="true" />
                     </Link>
                   </div>
                   {/* </div> */}
-                </div>
-                <div className="row-md-5">
-                  <div className="navnik">
-                    <Link to="/community">
-                      Community
-                      <i className="fa fa-angle-right" aria-hidden="true" />
-                    </Link>
-                  </div>
                 </div>
               </div>
             </div>
