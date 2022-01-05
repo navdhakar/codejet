@@ -2761,6 +2761,8 @@ hr {
 .weekly2-news-area .weekly2-wrapper .weekly2-single .weekly2-img img {
   width: 100%;
   border-radius: 6px;
+  transform: scale(1);
+  transition: all 0.5s ease-out 0s;
 }
 .weekly2-news-area .weekly2-wrapper .weekly2-single .weekly2-caption {
   margin-top: -31px;

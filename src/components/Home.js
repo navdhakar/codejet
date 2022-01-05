@@ -109,7 +109,7 @@ export default function Home() {
                 {/* Riht content */}
                 <div className="col-lg-4">
                   {blogs_data.slice(4, 7).map((data) => (
-                    <div className="trand-right-single d-flex">
+                    <div className="trand-right-single ">
                       <div className="trand-right-img ">
                         <img src={data.image} alt="" />
                       </div>
@@ -129,9 +129,10 @@ export default function Home() {
         </div>
         {/* Trending Area End */}
         {/*   Weekly-News start */}
-        <div className="weekly-news-area pt-50">
+
+        <div className="weekly2-news-area  weekly2-pading gray-bg">
           <div className="container">
-            <div className="weekly-wrapper">
+            <div className="weekly2-wrapper">
               {/* section Tittle */}
               <div className="row">
                 <div className="col-lg-12">
@@ -142,18 +143,19 @@ export default function Home() {
               </div>
               <div className="row">
                 {blogs_data.slice(9, 13).map((data) => (
-                  <div className="col-3">
-                    <div className="weekly-news-active dot-style d-flex dot-style">
-                      <div className="weekly-single">
-                        <div className="weekly-img">
-                          <img src={data.image} alt="" />
+                  <div className="col-lg-3 justify-content-center">
+                    <div className="weekly2-news" style={{ marginLeft: "12%" }}>
+                      <div className="row align-item-center">
+                        <div className="weekly2-img ">
+                          <img src={data.image} style={{ width: "80%" }} alt="" />
                         </div>
-                        <div className="weekly-caption">
-                          <span className="color1">News</span>
-                          <h4>
-                            <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
-                          </h4>
-                        </div>
+                      </div>
+                      <div className="weekly2-caption">
+                        <span className="color1">News</span>
+                        <p>{data.date}</p>
+                        <h4 className="mb-30">
+                          <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
+                        </h4>
                       </div>
                     </div>
                   </div>
@@ -162,6 +164,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         {/* End Weekly-News */}
         {/* Whats New Start */}
 
