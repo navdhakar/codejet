@@ -104,6 +104,23 @@ export default function Home() {
                         </div>
                       ))}
                     </div>
+                    <div className="row">
+                      {blogs_data.slice(13, 16).map((data) => (
+                        <div className="col-lg-4">
+                          <div className="single-bottom mb-35">
+                            <div className="trend-bottom-img mb-30">
+                              <img src={data.image} alt="" />
+                            </div>
+                            <div className="trend-bottom-cap">
+                              <span className="color1">News</span>
+                              <h4>
+                                <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 {/* Riht content */}
