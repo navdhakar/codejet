@@ -35,7 +35,7 @@ function Navbar() {
   }
   function Logout() {
     return (
-      <Link className="btn btn-info my-2 my-sm-0 text-uppercase" onClick={logout}>
+      <Link className=" btn-info my-2 my-sm-0 text-uppercase" onClick={logout}>
         logout
       </Link>
     );
@@ -43,10 +43,10 @@ function Navbar() {
   function Notlogin() {
     return (
       <>
-        <Link to="/login" className="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">
+        <Link to="/login" className="btn-info my-2 my-sm-0 mr-3 text-uppercase">
           login
         </Link>
-        <Link to="/signup" className="btn btn-info my-2 my-sm-0 text-uppercase">
+        <Link to="/signup" className="btn-info my-2 my-sm-0 text-uppercase">
           sign up
         </Link>
       </>
@@ -73,8 +73,8 @@ function Navbar() {
           <button className="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
             <span className="bar1" /> <span className="bar2" /> <span className="bar3" />
           </button>
-          <div id="my-nav" className=" navbar-collapse navnik3">
-            <ul className="navbar-nav mr-auto ">
+          <div id="my-nav" className=" navbar-collapse navnik3 collapse">
+            <ul className="navbar-nav mr-auto " style={{ color: "#000000" }}>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Home
@@ -85,9 +85,14 @@ function Navbar() {
                   Profile
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/about">
                   About
+                </Link>
+              </li> */}
+              <li className="nav-item">
+                <Link className="nav-link" to="/opportunity">
+                  Opportunity
                 </Link>
               </li>
               <li className="nav-item">

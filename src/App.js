@@ -21,6 +21,9 @@ import ProfileEdit from "./components/ProfileEdit";
 import ReactGa from "react-ga";
 import Paid from "./components/paid";
 import Apply from "./components/Apply";
+import Blog from "./components/Blog";
+import Post from "./components/Post";
+import Sideblog from "./components/Sideblog";
 
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
@@ -50,6 +53,9 @@ function App() {
         <Route path="/edit_profile" exact component={ProfileEdit} />
         <Route path="/paid" exact component={Paid} />
         <Route path="/apply" exact component={Apply} />
+        <Route path="/blog" exact component={Blog} />
+        <Route path="/post" exact component={Post} />
+        <Route path="/sideblog" exact component={Sideblog} />
       </Switch>
       <Footer />
     </Router>

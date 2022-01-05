@@ -1,213 +1,225 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import Services from "./Services";
+const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
 export default function Home() {
+  const [blogs_data, blog_load] = useState([]);
+  const req_blog = {
+    all: "all",
+  };
+  useEffect(() => {
+    fetch(`${server}/hire_api/hire/work`, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors",
+      body: JSON.stringify(req_blog),
+      // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: { "Content-Type": "application/json" },
+      redirect: "follow", // manual, *follow, error
+      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      // body data type must match "Content-Type" header
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("data fetched");
+        // profile_data.name = data.name;
+        // profile_data.email = data.email;
+        // profile_data.college_name = data.college_name;
+        // profile_data.college_year = data.college_year;
+        // profile_data.college_branch = data.college_branch;
+        // profile_data.github_profile = data.github_profile;
+        // profile_load([]);
+        blog_load(data);
+        // setImage();
+        // if (data.profileImg) {
+        //   setImage(data.profileImg);
+        // }
+
+        console.log(data);
+        console.log(blogs_data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div>
-      <div className="container-fluid gtco-banner-area">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              {/* Bridging Students learning and earning */}
-              <h1>Bridging Students learning and earning</h1>
-              {/* We provide revolutionary <strong>IT services</strong> and <strong>TECH team</strong> for new and early stage startups and businesses from best
-                students minds across country at very affordable prices */}
-              <p className="text-left">
-                <strong>•</strong>We help students in creating <strong>proof of work</strong> through our paid/unpaid internships and help them network with
-                other peers of similar field.
-                <br></br>
-                <strong>•</strong>We provide best IT team for new and early stage startups.
-                <br></br>
-                <strong>you got the right idea we got the right team.</strong>
-              </p>
-
-              {/* <div className="col-md-10"> */}
+      <main>
+        {/* Trending Area Start */}
+        <div className="trending-area fix">
+          <div className="container">
+            <div className="trending-main">
+              {/* Trending Tittle */}
               <div className="row">
-                <div className="row-md-5">
-                  <div className="navnik">
-                    <Link to="/opportunity" className="mohirti" style={{ marginRight: "20px" }}>
-                      Opportunity
-                      <i className="fa fa-angle-right" aria-hidden="true" />
-                    </Link>
+                <div className="col-lg-12">
+                  <div className="trending-tittle">
+                    <strong>Trending now</strong>
+                    {/* <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> */}
+                    {/* <div className="trending-animated">
+                      <ul id="js-news" className="js-hidden">
+                        <li className="news-item">Bangladesh dolor sit amet, consectetur adipisicing elit.</li>
+                        <li className="news-item">Spondon IT sit amet, consectetur.......</li>
+                        <li className="news-item">Rem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                      </ul>
+                    </div> */}
                   </div>
-                </div>
-
-                <div className="row-md-5">
-                  <div className="navnik" style={{ marginRight: "20px" }}>
-                    <Link to="/community" className="mohirti">
-                      Community
-                      <i className="fa fa-angle-right" aria-hidden="true" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="row-md-5">
-                  <div className="navnik">
-                    <Link to="/hireus" className="mohirti">
-                      Hire us
-                      <i className="fa fa-angle-right" aria-hidden="true" />
-                    </Link>
-                  </div>
-                  {/* </div> */}
                 </div>
               </div>
-            </div>
+              <div className="row">
+                <div className="col-lg-8">
+                  {/* Trending Top */}
+                  {blogs_data.slice(0, 1).map((data) => (
+                    <div className="trending-top mb-30">
+                      <div className="trend-top-img">
+                        <img src={data.image} alt="" />
+                        <div className="trend-top-cap">
+                          <span>Technology</span>
+                          <h2>
+                            <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                  {/* Trending Bottom */}
+                  <div className="trending-bottom">
+                    <div className="row">
+                      {blogs_data.slice(1, 4).map((data) => (
+                        <div className="col-lg-4">
+                          <div className="single-bottom mb-35">
+                            <div className="trend-bottom-img mb-30">
+                              <img src={data.image} alt="" />
+                            </div>
+                            <div className="trend-bottom-cap">
+                              <span className="color1">News</span>
+                              <h4>
+                                <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                {/* Riht content */}
+                <div className="col-lg-4">
+                  {blogs_data.slice(4, 7).map((data) => (
+                    <div className="trand-right-single d-flex">
+                      <div className="trand-right-img ">
+                        <img src={data.image} alt="" />
+                      </div>
 
-            <div className="col-md-6">
-              <div className="card">
-                <img className="card-img-top img-fluid" src="images/banner-img.png" alt="" />
+                      <div className="trand-right-cap">
+                        <span className="color1">Technology</span>
+                        <h4>
+                          <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
+                        </h4>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        {/* Trending Area End */}
+        {/*   Weekly-News start */}
+        <div className="weekly-news-area pt-50">
+          <div className="container">
+            <div className="weekly-wrapper">
+              {/* section Tittle */}
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="section-tittle mb-30">
+                    <h3>Weekly Top News</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                {blogs_data.slice(9, 13).map((data) => (
+                  <div className="col-3">
+                    <div className="weekly-news-active dot-style d-flex dot-style">
+                      <div className="weekly-single">
+                        <div className="weekly-img">
+                          <img src={data.image} alt="" />
+                        </div>
+                        <div className="weekly-caption">
+                          <span className="color1">News</span>
+                          <h4>
+                            <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End Weekly-News */}
+        {/* Whats New Start */}
 
-      <div>
-        <div className="container-fluid gtco-feature" id="services">
+        {/*Recent Articles End */}
+        {/*Start pagination */}
+        <div className="pagination-area pb-45 text-center">
           <div className="container">
             <div className="row">
-              <div className="col-md-7">
-                <div className="cover">
-                  <div className="card">
-                    {/* <svg className="back-bg" width="100%" viewBox="0 0 900 700" style={{position: 'absolute', zIndex: -1}}>
-                            <defs>
-                            <linearGradient id="PSgrad_01" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
-                                <stop offset="0%" stopColor="rgb(1,230,248)" stopOpacity={1} />
-                                <stop offset="100%" stopColor="rgb(29,62,222)" stopOpacity={1} />
-                            </linearGradient>
-                            </defs>
-                            <path fillRule="evenodd" opacity="0.102" fill="url(#PSgrad_01)" d="M616.656,2.494 L89.351,98.948 C19.867,111.658 -16.508,176.639 7.408,240.130 L122.755,546.348 C141.761,596.806 203.597,623.407 259.843,609.597 L697.535,502.126 C748.221,489.680 783.967,441.432 777.751,392.742 L739.837,95.775 C732.096,35.145 677.715,-8.675 616.656,2.494 Z" />
-                        </svg> */}
-                    {/* **************/}
-                    <svg width="110%" viewBox="0 0 700 550" style={{ marginTop: "-140px" }}>
-                      <clipPath id="clip-path">
-                        <path d="M89.479,0.180 L512.635,25.932 C568.395,29.326 603.115,76.927 590.357,129.078 L528.827,380.603 C518.688,422.048 472.661,448.814 427.190,443.300 L73.350,400.391 C32.374,395.422 -0.267,360.907 -0.002,322.064 L1.609,85.154 C1.938,36.786 40.481,-2.801 89.479,0.180 Z" />
-                      </clipPath>
-                      {/* xlink:href for modern browsers, src for IE8- */}
-                      <image clipPath="url(#clip-path)" xlinkHref="images/learn-img.gif" width="70%" height="100%" className="svg__image" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-5">
-                <h2> Delivering digital Solutions at affordable prices </h2>
-                <p>
-                  We are here to help you to take your startup into next step, where you focus on the business and we take care of all the technical
-                  requirements.
-                </p>
-                <p>
-                  <small>
-                    Whether its your startup, business or any personal IT support.We are providing high quality digital solutions at very low prices for all of
-                    your IT needs.
-                  </small>
-                </p>
-                <Link to="/why">
-                  Explore
-                  <i className="fa fa-angle-right" aria-hidden="true" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Services />
-        <div className="container-fluid gtco-numbers-block">
-          <div className="container">
-            <svg width="100%" viewBox="0 0 1600 400">
-              <defs>
-                <linearGradient id="PSgrad_03" x1="80.279%" x2="0%" y2="0%">
-                  <stop offset="0%" stopColor="rgb(1,230,248)" stopOpacity={1} />
-                  <stop offset="100%" stopColor="rgb(29,62,222)" stopOpacity={1} />
-                </linearGradient>
-              </defs>
-
-              <path
-                fillRule="evenodd"
-                fill="url(#PSgrad_03)"
-                d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"
-              />
-              <clipPath id="ctm" fill="none">
-                <path d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z" />
-              </clipPath>
-              {/* xlink:href for modern browsers, src for IE8- */}
-              <image clipPath="url(#ctm)" xlinkHref="images/word-map.png" height="800px" width="100%" className="svg__image"></image>
-            </svg>
-            <div className="row">
-              <div className="col-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">10</h5>
-                    <p className="card-text">Active Projects</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">20x</h5>
-                    <p className="card-text">Business Growth</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">8</h5>
-                    <p className="card-text">Completed Projects</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">5+</h5>
-                    <p className="card-text">Happy Clients</p>
-                  </div>
+              <div className="col-xl-12">
+                <div className="single-wrap d-flex justify-content-center">
+                  <nav aria-label="Page navigation example">
+                    <ul className="pagination justify-content-start">
+                      <li className="page-item">
+                        <a className="page-link" href="#">
+                          <span className="flaticon-arrow roted" />
+                        </a>
+                      </li>
+                      <li className="page-item active">
+                        <a className="page-link" href="#">
+                          01
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">
+                          02
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">
+                          03
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">
+                          <span className="flaticon-arrow right-arrow" />
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="container-fluid gtco-testimonials">
-          <div className="container">
-            <h2>Our Vision</h2>
-          </div>
-        </div>
-        <div className="container-fluid gtco-features-list mb-5">
-          <div className="container">
-            <div className="row">
-              <div className="media col-md-6 col-lg-4">
-                <div className="oval mr-4">
-                  <img className="align-self-start" src="images/quality-results.png" alt="" />
-                </div>
-                <div className="media-body">
-                  <h5 className="mb-0">Quality Results</h5>
-                  We believe in giving the best quality solution to our customers.
-                </div>
-              </div>
+        {/* End pagination  */}
+      </main>
 
-              <div className="media col-md-6 col-lg-4">
-                <div className="oval mr-4">
-                  <img className="align-self-start" src="images/affordable-pricing.png" alt="" />
-                </div>
-                <div className="media-body">
-                  <h5 className="mb-0">Affordable Pricing</h5>
-                  Our aim is to provide best quality solution with a affordable price.
-                </div>
-              </div>
-
-              <div className="media col-md-6 col-lg-4">
-                <div className="oval mr-4">
-                  <img className="align-self-start" src="images/free-support.png" alt="" />
-                </div>
-                <div className="media-body">
-                  <h5 className="mb-0"> Support</h5>
-                  Our team works is very responsive to support you.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* JS here */}
+      {/* All JS Custom Plugins Link Here here */}
+      {/* Jquery, Popper, Bootstrap */}
+      {/* Jquery Mobile Menu */}
+      {/* Jquery Slick , Owl-Carousel Plugins */}
+      {/* Date Picker */}
+      {/* One Page, Animated-HeadLin */}
+      {/* Breaking New Pluging */}
+      {/* Scrollup, nice-select, sticky */}
+      {/* contact js */}
+      {/* Jquery Plugins, main Jquery */}
     </div>
   );
 }
