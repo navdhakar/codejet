@@ -75,7 +75,7 @@ export default function Blog(props) {
                   <h3>{blogs_data.title}</h3>
                   <span>{blogs_data.date}</span>
 
-                  <h5 style={{ color: "black", fontWeight: "normal" }}>{blogs_data.views} views</h5>
+                  <span className="color3 mx-md-3">{blogs_data.views} views</span>
                 </div>
                 <div className="about-img">
                   <img src={blogs_data.image} alt="" />

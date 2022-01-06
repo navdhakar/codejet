@@ -101,7 +101,7 @@ export default function Home() {
                                   <span className="color1">News</span>
                                 </div>
                                 <div className="col">
-                                  <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                                  <span className="color3">{data.views} views</span>
                                 </div>
                               </div>
                               <h4>
@@ -125,7 +125,7 @@ export default function Home() {
                                   <span className="color1">News</span>
                                 </div>
                                 <div className="col">
-                                  <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                                  <span className="color3">{data.views} views</span>
                                 </div>
                               </div>
                               <h4>
@@ -149,7 +149,7 @@ export default function Home() {
                                   <span className="color1">News</span>
                                 </div>
                                 <div className="col">
-                                  <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                                  <span className="color3">{data.views} views</span>
                                 </div>
                               </div>
                               <h4>
@@ -176,7 +176,7 @@ export default function Home() {
                             <span className="color1">Technology</span>
                           </div>
                           <div className="col">
-                            <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                            <span className="color3">{data.views} views</span>
                           </div>
                         </div>
                         <h4>
@@ -219,7 +219,7 @@ export default function Home() {
                             <span className="color1">News</span>
                           </div>
                           <div className="col">
-                            <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                            <span className="color3">{data.views} views</span>
                           </div>
                         </div>
                         <p>{data.date}</p>
