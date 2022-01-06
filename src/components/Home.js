@@ -73,90 +73,90 @@ export default function Home() {
                 <div className="col-lg-8">
                   {/* Trending Top */}
                   {blogs_data.slice(0, 1).map((data) => (
-                    <div className="trending-top mb-30">
-                      <div className="trend-top-img">
-                        <img src={data.image} alt="" />
-                        <div className="trend-top-cap">
-                          <span>Technology</span>
-                          <h5 style={{ color: "white", fontWeight: "normal" }}>{data.views} views</h5>
-                          <h2>
-                            <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
-                          </h2>
+                    <Link to={{ pathname: "/blog", state: data._id }}>
+                      <div className="trending-top mb-30">
+                        <div className="trend-top-img">
+                          <img src={data.image} alt="" />
+                          <div className="trend-top-cap">
+                            <span>Technology</span>
+                            <h5 style={{ color: "white", fontWeight: "normal" }}>{data.views} views</h5>
+                            <h2 style={{ color: "white" }}>{data.title}</h2>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                   {/* Trending Bottom */}
                   <div className="trending-bottom">
                     <div className="row">
                       {blogs_data.slice(1, 4).map((data) => (
                         <div className="col-lg-4">
-                          <div className="single-bottom mb-35">
-                            <div className="trend-bottom-img mb-30">
-                              <img src={data.image} alt="" />
-                            </div>
-                            <div className="trend-bottom-cap">
-                              <div className="row">
-                                <div className="col">
-                                  <span className="color1">News</span>
-                                </div>
-                                <div className="col">
-                                  <span className="color3">{data.views} views</span>
-                                </div>
+                          <Link to={{ pathname: "/blog", state: data._id }}>
+                            <div className="single-bottom mb-35">
+                              <div className="trend-bottom-img mb-30">
+                                <img src={data.image} alt="" />
                               </div>
-                              <h4>
-                                <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
-                              </h4>
+                              <div className="trend-bottom-cap">
+                                <div className="row">
+                                  <div className="col">
+                                    <span className="color1">News</span>
+                                  </div>
+                                  <div className="col">
+                                    <span className="color3">{data.views} views</span>
+                                  </div>
+                                </div>
+                                <h4>{data.title}</h4>
+                              </div>
                             </div>
-                          </div>
+                          </Link>
                         </div>
                       ))}
                     </div>
                     <div className="row">
                       {blogs_data.slice(13, 16).map((data) => (
                         <div className="col-lg-4">
-                          <div className="single-bottom mb-35">
-                            <div className="trend-bottom-img mb-30">
-                              <img src={data.image} alt="" />
-                            </div>
-                            <div className="trend-bottom-cap">
-                              <div className="row">
-                                <div className="col">
-                                  <span className="color1">News</span>
-                                </div>
-                                <div className="col">
-                                  <span className="color3">{data.views} views</span>
-                                </div>
+                          <Link to={{ pathname: "/blog", state: data._id }}>
+                            <div className="single-bottom mb-35">
+                              <div className="trend-bottom-img mb-30">
+                                <img src={data.image} alt="" />
                               </div>
-                              <h4>
-                                <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
-                              </h4>
+                              <div className="trend-bottom-cap">
+                                <div className="row">
+                                  <div className="col">
+                                    <span className="color1">News</span>
+                                  </div>
+                                  <div className="col">
+                                    <span className="color3">{data.views} views</span>
+                                  </div>
+                                </div>
+                                <h4>{data.title}</h4>
+                              </div>
                             </div>
-                          </div>
+                          </Link>
                         </div>
                       ))}
                     </div>
                     <div className="row">
                       {blogs_data.slice(16, 19).map((data) => (
                         <div className="col-lg-4">
-                          <div className="single-bottom mb-35">
-                            <div className="trend-bottom-img mb-30">
-                              <img src={data.image} alt="" />
-                            </div>
-                            <div className="trend-bottom-cap">
-                              <div className="row">
-                                <div className="col">
-                                  <span className="color1">News</span>
-                                </div>
-                                <div className="col">
-                                  <span className="color3">{data.views} views</span>
-                                </div>
+                          <Link to={{ pathname: "/blog", state: data._id }}>
+                            <div className="single-bottom mb-35">
+                              <div className="trend-bottom-img mb-30">
+                                <img src={data.image} alt="" />
                               </div>
-                              <h4>
-                                <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
-                              </h4>
+                              <div className="trend-bottom-cap">
+                                <div className="row">
+                                  <div className="col">
+                                    <span className="color1">News</span>
+                                  </div>
+                                  <div className="col">
+                                    <span className="color3">{data.views} views</span>
+                                  </div>
+                                </div>
+                                <h4>{data.title}</h4>
+                              </div>
                             </div>
-                          </div>
+                          </Link>
                         </div>
                       ))}
                     </div>
@@ -165,25 +165,25 @@ export default function Home() {
                 {/* Riht content */}
                 <div className="col-lg-4">
                   {blogs_data.slice(4, 8).map((data) => (
-                    <div className="trand-right-single ">
-                      <div className="trand-right-img ">
-                        <img src={data.image} alt="" />
-                      </div>
-
-                      <div className="trand-right-cap">
-                        <div className="row">
-                          <div className="col">
-                            <span className="color1">Technology</span>
-                          </div>
-                          <div className="col">
-                            <span className="color3">{data.views} views</span>
-                          </div>
+                    <Link to={{ pathname: "/blog", state: data._id }}>
+                      <div className="trand-right-single ">
+                        <div className="trand-right-img ">
+                          <img src={data.image} alt="" />
                         </div>
-                        <h4>
-                          <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
-                        </h4>
+
+                        <div className="trand-right-cap">
+                          <div className="row">
+                            <div className="col">
+                              <span className="color1">Technology</span>
+                            </div>
+                            <div className="col">
+                              <span className="color3">{data.views} views</span>
+                            </div>
+                          </div>
+                          <h4>{data.title}</h4>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -207,27 +207,27 @@ export default function Home() {
               <div className="row">
                 {blogs_data.slice(9, 13).map((data) => (
                   <div className="col-lg-3 justify-content-center">
-                    <div className="weekly2-news" style={{ marginLeft: "12%" }}>
-                      <div className="row align-item-center">
-                        <div className="weekly2-img ">
-                          <img src={data.image} style={{ width: "80%" }} alt="" />
-                        </div>
-                      </div>
-                      <div className="weekly2-caption">
-                        <div className="row">
-                          <div className="col">
-                            <span className="color1">News</span>
-                          </div>
-                          <div className="col">
-                            <span className="color3">{data.views} views</span>
+                    <Link to={{ pathname: "/blog", state: data._id }}>
+                      <div className="weekly2-news" style={{ marginLeft: "12%" }}>
+                        <div className="row align-item-center">
+                          <div className="weekly2-img ">
+                            <img src={data.image} style={{ width: "80%" }} alt="" />
                           </div>
                         </div>
-                        <p>{data.date}</p>
-                        <h4 className="mb-30">
-                          <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
-                        </h4>
+                        <div className="weekly2-caption">
+                          <div className="row">
+                            <div className="col">
+                              <span className="color1">News</span>
+                            </div>
+                            <div className="col">
+                              <span className="color3">{data.views} views</span>
+                            </div>
+                          </div>
+                          <p>{data.date}</p>
+                          <h4 className="mb-30">{data.title}</h4>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>
