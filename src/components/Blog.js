@@ -44,6 +44,7 @@ export default function Blog(props) {
           image: data.image,
           date: data.date,
           blog: data.blog_description,
+          views: data.views,
         });
         // setImage();
         // if (data.profileImg) {
@@ -73,6 +74,8 @@ export default function Blog(props) {
                 <div className="section-tittle mb-30 pt-30">
                   <h3>{blogs_data.title}</h3>
                   <span>{blogs_data.date}</span>
+
+                  <h5 style={{ color: "black", fontWeight: "normal" }}>{blogs_data.views} views</h5>
                 </div>
                 <div className="about-img">
                   <img src={blogs_data.image} alt="" />

@@ -78,6 +78,7 @@ export default function Home() {
                         <img src={data.image} alt="" />
                         <div className="trend-top-cap">
                           <span>Technology</span>
+                          <h5 style={{ color: "white", fontWeight: "normal" }}>{data.views} views</h5>
                           <h2>
                             <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
                           </h2>
@@ -95,7 +96,14 @@ export default function Home() {
                               <img src={data.image} alt="" />
                             </div>
                             <div className="trend-bottom-cap">
-                              <span className="color1">News</span>
+                              <div className="row">
+                                <div className="col">
+                                  <span className="color1">News</span>
+                                </div>
+                                <div className="col">
+                                  <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                                </div>
+                              </div>
                               <h4>
                                 <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
                               </h4>
@@ -112,7 +120,14 @@ export default function Home() {
                               <img src={data.image} alt="" />
                             </div>
                             <div className="trend-bottom-cap">
-                              <span className="color1">News</span>
+                              <div className="row">
+                                <div className="col">
+                                  <span className="color1">News</span>
+                                </div>
+                                <div className="col">
+                                  <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                                </div>
+                              </div>
                               <h4>
                                 <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
                               </h4>
@@ -129,7 +144,14 @@ export default function Home() {
                               <img src={data.image} alt="" />
                             </div>
                             <div className="trend-bottom-cap">
-                              <span className="color1">News</span>
+                              <div className="row">
+                                <div className="col">
+                                  <span className="color1">News</span>
+                                </div>
+                                <div className="col">
+                                  <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                                </div>
+                              </div>
                               <h4>
                                 <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
                               </h4>
@@ -149,7 +171,14 @@ export default function Home() {
                       </div>
 
                       <div className="trand-right-cap">
-                        <span className="color1">Technology</span>
+                        <div className="row">
+                          <div className="col">
+                            <span className="color1">Technology</span>
+                          </div>
+                          <div className="col">
+                            <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                          </div>
+                        </div>
                         <h4>
                           <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
                         </h4>
@@ -185,7 +214,14 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="weekly2-caption">
-                        <span className="color1">News</span>
+                        <div className="row">
+                          <div className="col">
+                            <span className="color1">News</span>
+                          </div>
+                          <div className="col">
+                            <h5 style={{ color: "black", fontWeight: "normal" }}>{data.views} views</h5>
+                          </div>
+                        </div>
                         <p>{data.date}</p>
                         <h4 className="mb-30">
                           <Link to={{ pathname: "/blog", state: data._id }}>{data.title}</Link>
