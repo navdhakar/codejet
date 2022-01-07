@@ -78,6 +78,7 @@ export default function Home() {
                         <div className="trend-top-img">
                           <img src={data.image} alt="" />
                           <div className="trend-top-cap">
+                            <span>Placement</span>
                             <h5 style={{ color: "white", fontWeight: "normal" }}>{data.views} views</h5>
                             <h2 style={{ color: "white" }}>{data.title}</h2>
                           </div>
