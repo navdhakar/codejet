@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
                 {/* Riht content */}
                 <div className="col-lg-4">
-                  {blogs_data.slice(4, 8).map((data) => (
+                  {blogs_data.slice(4, 9).map((data) => (
                     <Link to={{ pathname: "/blog", state: data._id }}>
                       <div className="trand-right-single ">
                         <div className="trand-right-img ">
