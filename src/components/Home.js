@@ -68,8 +68,10 @@ export default function Home() {
                     </div> */}
                   </div>
                 </div>
+
                 <div className="col-lg-10">
-                  <div id="discord-button" style={{ marginTop: "3%", marginBottom: "2%" }}>
+                  <h5>for latest news,discussion, opportunity</h5>
+                  <div id="discord-button" style={{ marginBottom: "2%" }}>
                     <a href="https://discord.gg/V3PN23dPTH">
                       <div class="icon">
                         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
