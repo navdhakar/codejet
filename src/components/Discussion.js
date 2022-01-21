@@ -102,10 +102,9 @@ export default function Discussion() {
             </h6>
           </div>
         </div>
+
         <div className="row  ">
-          <p className="card-text mb-2 mx-md-5" style={{ fontSize: "15px", marginLeft: "3%" }}>
-            {comment.comment.answer}
-          </p>
+          <p className="card-text mb-2 mx-md-5">{comment.comment.answer}</p>
         </div>
         <div className="row">
           <div className="col">
@@ -250,7 +249,7 @@ export default function Discussion() {
     </div>
   );
   return (
-    <div className="col-lg-7">
+    <div className="col-lg-6">
       <h2 className="mb-2 align-top" style={{ marginTop: "" }}>
         Question of the day
       </h2>
