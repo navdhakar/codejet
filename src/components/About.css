@@ -26,3 +26,27 @@
 #discord-button a:hover {
   background-color: #6a7fc9;
 }
+#whatsapp-button a:hover {
+  background-color: #01e675;
+}
+#whatsapp-button .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+#whatsapp-button .icon svg {
+  fill: white;
+}
+#whatsapp-button a {
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #01e675;
+  text-decoration: none;
+}
+#whatsapp-button a:hover {
+  background-color: #01e675;
+}
