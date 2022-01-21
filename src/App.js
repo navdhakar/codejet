@@ -24,6 +24,7 @@ import Apply from "./components/Apply";
 import Blog from "./components/Blog";
 import Post from "./components/Post";
 import Sideblog from "./components/Sideblog";
+import Discussion from "./components/Discussion";
 
 const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp.com" : "http://127.0.0.1:8002";
 
@@ -56,6 +57,7 @@ function App() {
         <Route path="/blog" exact component={Blog} />
         <Route path="/post" exact component={Post} />
         <Route path="/sideblog" exact component={Sideblog} />
+        <Route path="/discussion" exact component={Discussion} />
       </Switch>
       <Footer />
     </Router>

@@ -369,24 +369,26 @@ export default function Home() {
                   <h2 className="mb-2 align-top" style={{ marginTop: "" }}>
                     Question of the day
                   </h2>
-                  <div className="card" style={{ backgroundColor: "#ebebeb" }}>
-                    <div className="card-body">
-                      <h3>Q.{topic_data.post}</h3>
-                      {discussion_data.slice(-2).map((data, index) => (
-                        <Discussions key={Math.floor(Math.random() * 100 + 1)} comment={data} indexes={index} />
-                      ))}
-                      <div className="row" id="gtco-footer">
-                        <div className="col" id="contact">
-                          {/* <h5>If you need tech support, kindly fill up this form and our team will get in touch with you. so we can provide best developer for the job</h5>
+                  <Link to="/discussion">
+                    <div className="card" style={{ backgroundColor: "#ebebeb" }}>
+                      <div className="card-body">
+                        <h3>Q.{topic_data.post}</h3>
+                        {discussion_data.slice(-2).map((data, index) => (
+                          <Discussions key={Math.floor(Math.random() * 100 + 1)} comment={data} indexes={index} />
+                        ))}
+                        <div className="row" id="gtco-footer">
+                          <div className="col" id="contact">
+                            {/* <h5>If you need tech support, kindly fill up this form and our team will get in touch with you. so we can provide best developer for the job</h5>
               <br /> */}
-                          {showResults ? <Results /> : null}
-                          {!showResults ? <Answer /> : null}
+                            {showResults ? <Results /> : null}
+                            {!showResults ? <Answer /> : null}
 
-                          {/* <textarea className="form-control" ref={descriptionRef} placeholder="discription" defaultValue={""} /> */}
+                            {/* <textarea className="form-control" ref={descriptionRef} placeholder="discription" defaultValue={""} /> */}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               {/* Trending Bottom */}
