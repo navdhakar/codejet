@@ -152,6 +152,8 @@ export default function Discussion() {
     return `${year}${separator}${month < 10 ? `0${month}` : `${month}`}${separator}${date}`;
   }
   useEffect(() => {
+    discussion_load([]);
+
     fetch(`${server}/topic/discussion/today_discussion`, {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
       mode: "cors",
