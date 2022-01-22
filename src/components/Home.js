@@ -216,8 +216,10 @@ export default function Home() {
               post: data[0].post,
               id: data[0].post,
             });
-            data[0].answers.sort((a, b) => parseInt(a.votes) - parseInt(b.votes));
-            discussion_load(data[0].answers);
+            data[0].answers.sort((a, b) => parseInt(b.votes) - parseInt(a.votes));
+            data[0].answers.slice(0, 3);
+
+            discussion_load(data[0].answers.slice(0, 3));
             // setImage();
             // if (data.profileImg) {
             //   setImage(data.profileImg);
@@ -373,10 +375,10 @@ export default function Home() {
                     <div className="card-body">
                       <Link to="/discussion">
                         <h3>Q.{topic_data.post}</h3>
-                        {discussion_data.slice(-2).map((data, index) => (
-                          <Discussions key={Math.floor(Math.random() * 100 + 1)} comment={data} indexes={index} />
-                        ))}
                       </Link>
+                      {discussion_data.map((data, index) => (
+                        <Discussions key={Math.floor(Math.random() * 100 + 1)} comment={data} indexes={index} />
+                      ))}
                       <div className="row" id="gtco-footer">
                         <div className="col" id="contact">
                           {/* <h5>If you need tech support, kindly fill up this form and our team will get in touch with you. so we can provide best developer for the job</h5>
