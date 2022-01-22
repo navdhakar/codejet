@@ -4,6 +4,8 @@ const server = process.env.NODE_ENV == "production" ? "https://codejet.herokuapp
 export default function Discussion() {
   const nameRef = useRef();
   const answerRef = useRef();
+  const socialRef = useRef();
+
   const [blogs_data, blog_load] = useState([]);
   const [discussion_data, discussion_load] = useState([]);
   const [topic_data, topic_load] = useState({});
@@ -83,7 +85,18 @@ export default function Discussion() {
     }
     console.log(comment);
     const changeColour = isClick ? "#e01425" : "grey";
-
+    function Social() {
+      if (comment.comment.social) {
+        console.log(comment.comment.social);
+        return (
+          <div className="col">
+            <a href={comment.comment.social}>{comment.comment.social}</a>
+          </div>
+        );
+      } else {
+        return <></>;
+      }
+    }
     return (
       <div className="row mb-4">
         <div className="row">
@@ -120,6 +133,8 @@ export default function Discussion() {
               {like}
             </i>
           </div>
+          <Social />
+
           <div className="col">
             <a href="#" className="card-link mx-md-5">
               {comment.comment.date}
@@ -243,6 +258,8 @@ export default function Discussion() {
     <div>
       <h4> Submit answer </h4>
       <input type="text" ref={nameRef} className="form-control" placeholder="name" />
+      <input type="text" ref={socialRef} className="form-control" placeholder="your any social link, email, Insta etc" />
+
       <textarea ref={answerRef} className="form-control" placeholder="answer" />
       <a className="submit-button" onClick={post} to="/">
         POST
